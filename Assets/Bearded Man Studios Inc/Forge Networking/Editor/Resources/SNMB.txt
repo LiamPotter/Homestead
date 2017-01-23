@@ -1,0 +1,17 @@
+using UnityEngine;
+using System.Collections;
+
+using BeardedManStudios.Network;
+
+public class NewSimpleNetworkedMonoBehavior : SimpleNetworkedMonoBehavior
+{
+	protected override void NetworkStart()
+	{
+		base.NetworkStart();
+	}
+
+	public override void Disconnect()
+	{
+		base.Disconnect();
+	}
+}

@@ -1,0 +1,52 @@
+using UnityEngine;
+using System.Collections;
+
+using BeardedManStudios.Network;
+
+public class NewNetworkedMonoBehavior : NetworkedMonoBehavior
+{
+	protected override void NetworkStart()
+	{
+		base.NetworkStart();
+	}
+
+	protected override void NetworkInitialized()
+	{
+		base.NetworkInitialized();
+	}
+
+	protected override void OwnerUpdate()
+	{
+		base.OwnerUpdate();
+	}
+
+	protected override void NonOwnerUpdate()
+	{
+		base.NonOwnerUpdate();
+	}
+
+	protected override void OwnerFixedUpdate()
+	{
+		base.OwnerFixedUpdate();
+	}
+
+	protected override void NonOwnerFixedUpdate()
+	{
+		base.NonOwnerFixedUpdate();
+	}
+
+	protected override void EnteredProximity()
+	{
+		base.EnteredProximity();
+	}
+
+	protected override void ExitedProximity()
+	{
+		base.ExitedProximity();
+	}
+
+	public override void Disconnect()
+	{
+		base.Disconnect();
+	}
+}

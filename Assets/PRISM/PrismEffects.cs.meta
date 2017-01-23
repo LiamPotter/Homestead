@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 0247cc23c066a0549a9906c534207546
+timeCreated: 1459953662
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - currentPrismPreset: {instanceID: 0}
+  - m_Material: {instanceID: 0}
+  - m_Shader: {instanceID: 0}
+  - m_Material2: {instanceID: 0}
+  - m_Shader2: {instanceID: 0}
+  - m_AOMaterial: {instanceID: 0}
+  - m_AOShader: {instanceID: 0}
+  - lensDirtTexture: {fileID: 2800000, guid: 9337bbb7e51e1114fb460d8ea3a59af0, type: 3}
+  - noiseTexture: {fileID: 2800000, guid: d20b7c940c173cb45aae1d81e777429b, type: 3}
+  - dofFocusTransform: {instanceID: 0}
+  - twoDLookupTex: {instanceID: 0}
+  - threeDLookupTex: {instanceID: 0}
+  - secondaryTwoDLookupTex: {instanceID: 0}
+  - secondaryThreeDLookupTex: {instanceID: 0}
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: 8c5f7924d10165b4fbc44fea3887a9a5, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

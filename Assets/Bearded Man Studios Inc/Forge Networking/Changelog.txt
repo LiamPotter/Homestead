@@ -1,0 +1,688 @@
+Support Email:  support@beardedmangames.com
+Main developer portal:  http://developers.forgepowered.com/
+Main tutorial portal:  http://developers.forgepowered.com/Tutorials
+Main Forums:  http://forums.forgepowered.com/
+Main Feedback Portal:  http://developers.forgepowered.com/Feedback
+Main Unity Forum Thread:  http://forum.unity3d.com/threads/superpowered-cross-platform-networking-library-including-windows-universal-apps.286900/
+Beginner Videos:   https://www.youtube.com/playlist?list=PLaMPnrbpanJ7DazlqTkZHHBSt8D5dx4Um
+Intermediate Videos:  https://www.youtube.com/playlist?list=PLaMPnrbpanJ6DC4RmaEbyHgcnqi6HrfTt
+
+Release V20:
+	Websocket Support (WebSocket Alpha)
+
+Release V19.22:
+	Added functionality for clients to ping a host
+
+Release V19.21:
+	Fixed Large Packets not sending properly
+
+Release V19.2:
+	Documentation overhaul, everything is now properly documented out
+	Fixed Lan Discovery
+	Updated examples
+	Fixed cache pulling remote objects and displaying warnings
+	Fix for Forge Zombies Example when tracking bandwith
+	Bug fix for Webplayer
+	Bug fix for offline play when using cached game objects
+	Update for future bare metal support
+
+Release V19.1:
+	Bug fixes for Resources are now loading all subfolders instead of the listed folder
+	Additional null reference checks on instantiate for offline play
+
+Release V19:
+	Allowed optional params in RPC
+	Resources are now loading all subfolders instead of the listed folder
+	Offline play fixes
+	Additional null checks if connected or not
+	Added additional Debug Logs for the null Locate
+	Fixed WinRT (Windows Phone Builds)
+	Removed warnings on project
+	Added 4_7 Support
+	Fix CurrentFrame being sent as byte for Authoritative Input Events
+	Fixed a possible null reference in the networking
+
+Release V18:
+	Fixed issue with Cross Platform UDP sending an extra byte
+	Added generic fix for WinRT to create NetworkingPlayer dynamically
+	Updated WinRT threading issues in CrossPlatformUDP
+	Fixed timeout issues for connections
+	Code cleanup of using statements
+	Fixed thread checking
+	Added a delay to the task system
+	Fixed function signatures for WinRT
+	Updated to support Unity 5.3 scene setups
+	Fixed removal of NMB in NetWorker and SNMB
+	Updated name assignment of Networking Player
+	Cached better supports updated date-time expirations
+	Added fix for lan discovery on iOS, Mac and Android
+	Removal of explicit setting for reliable on SNMB rpc
+	Added better thread locking to SNMB and Networing Streams
+	Overhauled CrossPlatformUDP to use a packagemanager
+	Overhauled CrossPlatformUDP to use a client manager
+	Moved all resend packets to manager
+	Added batching to the RPC invokes to make them faster
+	Fixed out of bound dictionary issues
+	Updated try catch logging for index out of range on read
+	Various formatting adjustments
+	Updated mutex locks on resends
+	Fixed malformed packet from throwing killing error
+	Now cloning bytes into newly generated NetworkingStreamRPC rather than copying reference
+	Fixed out of bounds issue with reading RPC's for objects that don't yet exist
+	Redundant mutex checking on writing to Network stream
+	Fixed issue with skip replication on RPC
+	Fixed issue with skip replication on RPC queue
+
+Release V17.1 User Fixs:
+	Added ability for the default calls (RPC) to run on FixedUpdate rather than just Update
+	Bug fixes for offline mode
+	Fixed misspelling on maxPlayers which was MaxPlayers so it was assigning to itself
+	Uncommented the timeout thread
+	Updated ObjectMapper to support chinese characters
+	Fixed dictionary sync error on client disconnects
+
+Release V17.01 Hotfix:
+	Returning to older fix for dealyed event throwing object destroyed message
+
+Release V17:
+	Fixed spelling for AddDynamicCommandEvent
+	Added new "ChangeOwner" function that is now a part of SimpleNetworkedMonoBehavior so you can change the owner of an object
+	Added a pulic "allowOwnershipChange" bool that if is false will prevent the object from being able to transfer ownership
+	In order to not rely on Unity sorting order, ids of SNMBs in the scene on build will compile an id to be used
+	TCP is now once again working, just needs to be fully tested
+	Moved bandwidth tracking to be global
+	Instantiate callback's paramater is now SNMB and not GameObject
+	Initialize for Networking now passes the socket used in initialization to get further from static PrimarySocket dependency
+	Set some threads to run as background thread
+	Cleaned up useless using statements and fully qualified type names
+	Fix for controlling socket on NetworkingManager on new Networking manager
+	Added null check fixes on NetworkingManager
+	Fixed close socket error on iOS
+	Removed useless debug logs
+	Added automatic name for UnityEventObject
+	Fixed disconnect to be called on the main thread
+	Added new cache reset for Cache class in relation to disconnecting and re-connecting
+	Added compiled Network id mapping to objects that are already in the scene
+	Fixed various spellings
+	Created thread helper class for checking main thread and future thread management
+	Optimized performance (for server) on sending packets by doing preparation ahead of time
+	Fix error with comparing base object error on second run
+	Fixed issue with NetworkingManager disconnect having null check
+	Fixed UDP reliable packet groups not coming through
+	Exiting on UDP when player is not found
+	Added simple hash that is required to match on connect to avoid needless traffic
+	Fixed WriteCustom from hijacking UDP packets or being ignored from processed
+	Updated ObjectMapper to use the functions it has rather than duplicating code
+	TCPProcess will return faster when data is not available
+	Allowing Networker to have a flag for when it is using the unityengine (NetworkingManager) or not
+	Fixed bug with byte[] and BMSByte sending after large data sets have been sent
+
+Release V16.8:
+	Fix for out of sync exception on disconnecting timed out players
+	MessageInfo will be considered when doing the arguments length check
+	Created a cache demo to make sure it is working properly
+	Fixed issue with cache not sending data larger than 1024 bytes
+	Fixed issue with core not reading byte correctly from the BMSByte.Read<byte> method
+	Cache now using new system for sending data and the Cache scene is claiming that the contents are identical
+	Update for fix on iOS UnityEventObject
+
+Release V16.7:
+	Fixed spelling on isBareMetal from isBearMetal
+	All socket references are now set to null on Networking.Reset
+	New Networking.NetworkReset event that is fired when the Networking.Reset method is being called
+	Fixed casting issue in writing raw that was caused from casting a CachedUDPClient to an IPEndPoint
+	Updated the Send method so that the server doesn't send messages to itself as they are already processed
+	Added an exception that is only checked in the editor for MapBytes, it will throw an exception when a supplied object is null
+	Added NetworkingManager.Instance.OwningNetWorker to the null checks for the setup actions
+
+Release V16.6:
+	Added AuthoritativeURPC to SimpleNetworkedMonoBehavior
+	Fixed issue where when a client calls NetworkReceivers.Owner it is getting reflected on the server
+	Added new NetworkReceivers.ServerAndOwner option
+	Timeout event for connecting to a server you can assign timeout time with "ConnectTimeout" and register to the "connectTimeout" event on the NetWorker
+
+Release V16.5:
+	Client side prediction update
+
+Release V16.4:
+	Added exception (to editor only) when the argument count for an RPC does not match the method signature parameter count
+
+Release V16.3:
+	Fixed issue with RPC buffer not removing buffered rpc calls
+	Fixed issue with RPC buffer skipping various rpc removals
+	Added an overridable NetworkDisconnect method which is fired on objects when the Network connection is being terminated (Disconnect is used on objects that are being removed from the Network)
+
+Release V16.2:
+	Resolved issue with disconnect not properly setting up the Networking Manager on next connect
+	Fixed issue with malformed owning Networker on the Networking Manager on reconnection to any server
+
+Release V16.1:
+	Fixed issue with AuthoritativeRPC being sent to all clients
+	Fixed issue with buffered rpc call sending buffer to other clients
+	Fixed CrossPlatformUDP reliable packet and player connection links
+	Fixed issue with warnings being displayed on overwriting custom write ids
+
+Release V16:
+	Completely re-written how WriteCustom is identified to be more reliable
+	Explicit selection of WriteCustom identifiers
+	Updated all references to WriteCustom to have new identity setup
+	Updated master server with new WriteCustom logic
+	Fixed issue with getting the host list from the master server thworing dictionary error
+	Fixed issue with connections to stand alone starting a manager
+	Added feature to call DontDestroyOnLoad on Networked objects marked with this in the inspector
+
+Release V15.51:
+	Fix for cloning the previous RPC stack for the Networking Manager to the new scene specific manager
+
+Release V15.5:
+	Fixed issue with static unity object event getting multiple registers from NetworkingManager
+	NetworkingManager has been enforced to have the id of 0
+	NetworkingManagers will not stack inside of the queue if they are destroyed
+	Proper cleanup of NetworkingManager when it is getting replaced by a scene version
+	Fixed issue with Argument index out of range being caused by stacked NetworkingManagers
+	NetworkingManager now properly replaces its previous indexes
+
+Release V15.41:
+	Roll back RPC call change as it was not related to a bug fix
+
+Release V15.4:
+	Fixed issue with OwnerUpdate and NonOwnerUpdate being called 2 times each frame
+	RPC calls are no longer dependant on the unity update rpc stack
+	RPC calls are now envoked from read thread and pushed to the main thread from there
+	RPC calls are now executed from the main thread manager
+	Added a new "Check for Updates" menu item in "Window/Forge Networking" menu
+
+Release V15.3:
+	Fixed NetworkingManager setup this has to do with loading the correct Networking Manager when one exists and a scene is loaded with another
+	The static event Networking.connected will now properly de-register from the Networking Manager
+	Updated iOS to fix the IL2CPP issues around abort
+
+Release V15.2:
+	Added MessageInfo class that can be used as an RPC input parameter which will give senderid and frame
+	Fixed issue with scraping child objects on SNMB on startup
+	Clients who do not properly disconnect and then reconnect (before timeout) will be properly disconnected when they connect again and will be assigned as a new player
+	Fixed issue with objects not initializing when loading the next scene
+
+Release V15.12 (Hotfix):
+	Fixed issue with Main Thread Manager not being created in offline mode
+	Fixed issue with offline mode not properly being evaluated
+	Fixed issue with duplicate unity event objects
+	Updated unity event objects to have static events
+	SNMB now have a cleanup function that will de-register event handles
+	Networking manager will now be destroyed and replaced with any new Networking managers that are created or loaded in
+	NetWorkerKiller no longer has a concept of initialization
+	SNMB initialization now happens on host and connect
+	Networking Manager will now search for objects on awake in the scene to add to the Networked objects list
+
+Release V15.11 (Hotfix):
+	Fixed issue with player objects not destroying on disconnect
+	Fixed issues with MainThreadManager having its list being altered within the mutex
+	Any bugs related to main thread manager's alteration also fixed
+
+Release V15.1:
+	Fixed RPCs being null to auto Reflect
+	Moved update methods to SNMB
+	Fixed the FixedUpdate owner methods and moved them to SNMB
+	Fixed issue with IsOnline giving incorrect value
+	Fixed bug with Unity 5.0x not having "titleContent.text"
+	Removed old CallOnMainThread function from SNMB
+	Fixed issue with RPC not being called locally offline
+
+Release V15:
+	No more need to override Awake, all override Awake function will need to change
+	No more need to override Start, all override Start function will need to change
+	No more need to override Update, all override Update function will need to change
+	No more need to override FixedUpdate, all override FixedUpdate function will need to change
+	Destroy on disconnect moved to SNMB from NMB
+	New setup flow for Networked objects that are in a scene
+	Updated all example scripts to remove the overrides
+	Added a new right click create context for Forge behaviors
+	Fixed issue with DataInitialized not being assigned correctly on server
+	Removed redundant class scopes on static calls
+	Fixed misspelling on DealyedInitialize
+	Updated Windows Phone not connecting due to null hostendpoint variable
+
+Release V14.7:
+	Created brute force Unit Testing for Forge Networking
+	Fixed issue with sbyte not serializing correctly across the Network
+	Fixed issue with sending a single char across an rpc
+	Fixed issue with sending a char as part of a parameter list for an RPC
+	Updated iOS Task class to work with uniform thread management design
+	Fixed issue with master server not sending down host list to client
+	Fixed issue with write custom using the wrong protocol type
+	Now you can start a Networked scene offline (wrappers for instantiate and destroy created) (NetworkingManager.IsOnline)
+
+Release V14.62:
+	Removed redundant initialization call from the server for objects
+	Fixed exception that is thrown on server when client abruptly disposes the connection
+	Added dontDestroyOnLoad to SNMB, if set true the object will not be cleaned up on Network on scene change
+
+Release V14.61:
+	Updated UI so that it now starts off collapsed and takes up less space
+	Updated UI so that there is a button to turn off all position and rotation rather than clicking each one to turn off
+	Updated the NetworkInitialized bug to work with number type variables
+
+Release V14.6:
+	Fixed issue with byte[] having extra bytes at the end when sent across the Network
+	Added [NetSyncToServer] where variables marked with this only go to the server and not other clients
+	DataInitialized is now set to true after NetworkInitialized method call
+	Objects will once again teleport to initial positions rather than interpolate to them
+	Fixed race condition bug with multiple clients joining simultaniously with a large rpc list
+	Fixed issue with spawning objects with child behaviors and the id getting out of sync preventing spawn
+	Object mapper (and everything else) now supports sbyte
+	Fixed bug where non-numeric objects were not getting set by the NetworkInitialized method
+	Fixed error with iOS throwing exception on disconnect
+	Removed .intercept() for iOS
+	iOS no longer slows down as time goes on when disconnecting and reconnecting (tested with Zombie example)
+
+Release V14.5:
+	Fixed major bug with initial spawning locations of clients not being replicated when they join sometimes
+	Fixed major bug with initial clients not updating to starting sync values not replicating sometimes
+
+Release V14.4:
+	New IBRPCIntercept interface that will allow you to intercept RPC logic from the client for security
+
+Release V14.35:
+	Fixed issues with disconnect on iOS throwing exception
+	Fixed issue with disconnecting host and then reconnecting
+	Fixed issue with NetworkingManager being spawnned on disconnect
+	Fixed race condition with calling RPC on instantiate of an object from the server
+
+Release V14.31:
+	Fixed ban message to say message at the end when player tries to join again (in disconnect message)
+	Fixed NetFX_CORE to build with new logic
+	Removed useless debugging myId in SNMB
+
+Release V14.3:
+	Fix for authoritative input sync issues
+	Fix for Network.Instantiate with multiple SNMBs on the object
+	Fixed issue with multiple SNMBs on a single object and then spawnning multiples of that object in a single loop
+
+Release V14.2:
+	Dynamic commands have been created; you can send a dynamic command with Networking.DynamicCommand
+	Listening for dynamic commands added, you can add a dynamic command listener with NetWorker.AddDynaicCommandEvent
+	Clients can now send Networking.ClientReady (you can call this at any time) which will execute the servers NetWorker.clientReady event
+	BMSByte is now supported for the Append function of BMSByte
+
+Release V14.1:
+	Fixed issues with Independent Master Server
+	Network.Instantiate can now be called before NetworkingManager exists
+	Solves issue with NetworkingManager not being created in scenes that don't have any Networked objects
+	Fixed issue with WriteCustom returning incorrect data
+
+Release V14:
+	Forge Networking
+		Fixed HTTP library, you are now able to do HTTP (REST) requests once again
+		Fixed WinRT to be able to compile with all the new additions
+		Added new simple Task class in the BeardedManStudios.Threading namespace which will continue to be extended and updated
+		Networking.connected now returns the socket that was connected
+		Servers can now ban IP addresses for a given amount of time in minutes
+		[ManualNetSync] added to manually serialize data type rather than doing it on change, use this the same way you use [NetSync], call "SerializeManualProperties" when you want to serialize them all
+		Moving from one scene to the other no longer will throw error for missing base.Start call
+		New UnityEventObject for firing arbitrary events during standard unity method calls on a GameObject
+		Various performance improvements related to serializing NMBs
+		Networking.Instance.clientLoadedLevel event added that fires when a client loads the level
+		Networking.Instance.allClientsLoaded event added that fires when all clients have loaded the level
+		Wrapped the error file logging in UNITY_STANDALONE
+		Find on LAN works once again
+		Fixed Raw writes
+		Fixed issue with Networking.ChangeClientScene
+		Chat window now supports Enter key to submit messages
+		Added new free Coop Dungeon Forge project thanks to @danielsnd - http://forum.unity3d.com/members/danielsnd.398765/
+
+	Forge Web Server
+		A port can be specified (other than 80 and 443) to bind the web server to
+		Going to the webpage will render the webserver
+		Allow data to be parsed into HTML views through getters
+		Allow for controllers to be dynamically loaded based on url sceme
+		Allow for alternative public methods to be called if the url pattern is specified "/controller/method/arg1/arg2/arg3"
+		Pages are loaded from HTML files in Resources/www folder
+		Web Server tool added to menu for easy automatic server starting
+		Auto server start script will start up the web server and shut it down when destroyed
+		Index page now shows basic stats for the server
+
+Release V13.1:
+	Fix for issue NetworkedMonoBehaviors exception that was being thrown with long lived transport
+	Updated the default update time for the Network to cut bandwidth in half by default
+	Updated NetworkedMonoBehaviors to have no dependency on main thread when replicating values
+	Fixed issue with position desync randomly happening
+	Fixed issues with NetSync interpolation being defaulted to false
+	Fixed issue with callback not firing from NetSync on non-interpolated values
+
+Release V13:
+	NetworkReceivers.Owner has been added so now only owners of a particular object can be targeted
+	Individual values can now ignore interpolation with NetSync.Interpolate.(True|False) - Default is true, this only works if Network Interpolation is turned on
+	Updated core to support owner receivers. This targets the owner of the SNMB only
+	Only writing exception files on UNITY_STANDALONE
+	If Linux selected as build mode, StartGame will have auto start server option
+	Extracted logic from UDP to be global logic for packet read
+	New public Send method in NetWorker to send raw byte[] messages to any endpoint
+	Updated the core Forge framework to make it more compatable with TCP
+	Updated bug in core framework reliable packets with multiple end users
+	Reliable packets have been better optimized for targeting players more efficiently
+	WriteRaw now updated for targeted use cases and reliable is actually reliable
+	Reliable responses happen quicker and do not need to be added to multiple places anymore
+
+Release V12.6:
+	Fixed issue with serializing a byte array before other data types in an RPC call
+	Added overridable method for when player leaves proximity of current player
+	Added overridable method for when player enters proximity of current player
+	Added event to fire when player leaves proximity of current player (good for things like disabling renderes)
+	Added event to fire when player enters proximity of current player (good for things like enabling renderes)
+	The current Frame index is now supplied across the Network for lag compensation (rewinding hit boxes)
+	Fixed authoritative serialize to make sure to ignore proximity standards
+
+Release V12.5:
+	New drag and drop chat system
+	Fixed initialization of objects already in the scene
+	Optimized how objects are initialized across the Network to remove redundancies
+	Fixed issue with interpolation on latest build
+	Fixed RPC issue where others would call itself
+
+Release V12.4:
+	Fixed error text for override start to also include override NetworkStart
+	Removed redundant initialize object calls on instantitate
+	Fixed race condition with RPC calls being received by the server before the object is setup
+
+Release V12.31:
+	Updated inverted boolean logic on NetworkInitialized setup
+	Added overridable "OwnerUpdate" which is an update method only called by owners of a NetworkedMonoBehavior (Removes need of IsOwner returns in update)
+	Added overridable "NonOwnerUpdate" which is an update method only called by non owners of a NetworkedMonoBehavior (Removes need of !IsOwner returns in update)
+	Added overridable "OwnerFixedUpdate" which is an update method only called by owners of a NetworkedMonoBehavior (Removes need of IsOwner returns in fixed update)
+	Added overridable "NonOwnerFixedUpdate" which is an update method only called by non owners of a NetworkedMonoBehavior (Removes need of !IsOwner returns in fixed update)
+
+Release V12.3:
+	Added the ability to pass an exclusive id into the constructor of Forge Transport Object
+	Added new bool getter "DataInitialized" as a part of NetworkedMonoBehavior for when variables have been synced for the first time
+	Added overridable protected "NetworkInitialized" method as a part of NetworkedMonoBehavior for the moment the variables have been initialized across the Network
+
+Release V12.2:
+	Now remote objects can be specified to be spawned for other users
+	Now support for Forge Transport Object
+
+Release V12.01:
+	Fixed issue where disconnect was being called two times when a client leaves
+
+Release V12:
+	Fixed disconnect and reconnect bug so that the host/clients can now disconnect and reconnect
+	Updated static variables to reset in SimpleNetworkedMonoBehavior
+	Fixed issue where NetworkingManager.Instance becomes null on disconnect
+	Fixed issue where player (isPlayer object) was not being destroyed on disconnect
+	Fixed desync with instantiates and destroys, tested with 34 players and 30 "zombies"
+
+Release V11.65:
+	Master server no longer pings the hosts
+	Hosts now ping master server as to stay in the list
+
+Release V11.62:
+	Fixed issue with multiple scripts on single object with authoritative and non-authoritative
+	Fixed rigidbody issues with mixed NetworkedMonoBehaviors on same object
+	Fixed collider issues on mixed NetworkedMonoBehaviors on the same object
+	Added new floating poin input scripts for authoritative model
+
+Release V11.6:
+	Removed excessive logos from build
+	Fixed critical non-buffered delete bug for future joining players
+	Fixed inverted logic error for delete which was found in Bare Metal development
+
+Release V11.5:
+	Removed the Network object from the buffer of an object that is Network.Destroy();
+	Server now correctly resets the buffer of objects that have been passed through to others from a destroy
+	Removed excess code that can cause issues to high velocity games with instantiate and destroying while other users connecting
+	Cleanup on NetworkingStream properly pass the NetworkID and SimpleNetworkedMonoBehavior that it called from, now correctly assigns itself
+	Fixes to the buffering of Instantiates and Destroys, will now properly remove all buffers of the object that was destroyed from an instantiate
+	Added a Powered By Forge Scene
+
+Release V11.1:
+	Fixed NetworkingManager.Instance null inverted check in Networking class
+	BMSBytes can now be serialized across the Network with object mapper, which means it will work for RPC calls, WriteCustom and anywhere else that serializes arguments
+	Ditto the last line except with a byte array
+	Added rudimentary position offset for serverIsAuthority and client side prediction to control "rubber banding"
+	Added rudimentary rotation offset for serverIsAuthority and client side prediction to control "angle snapping"
+
+Release V11:
+	Created a reset for SimpleNetworkedMonoBehavior when disconnecting from Network
+	Clients disconnecting and reconnecting with the Networking.Disconnect(); method will now be able to reconnect correctly
+	Experimental version of NAT Hole Punching ready for larger scale testing
+	Removed old NAT Hole Punching test server id
+	Added Master Server helper method to set static ip for NAT hole punching
+	Added custom read events being properly handled on the server as well
+	Bug fixes for custom read event on supporting receivers of All, AllBuffered, and AllProximity
+	Refactored some code for cleanup on Write Custom to be more readable
+	Updated example scene to include a custom read event handled by the server only
+
+Release V10.91:
+	Fixed warnings that were caused by not overriding empty base disconnect
+	Bare Metal now has experimental NAT hole punching
+
+Release V10.9:
+	Fixed issues with the connect event on start scene
+	Fixed common unity editor crash issues
+	Fixed reliable packets sending large packet count desync
+	Fixed reliable packets being sent too slow after desync fix
+	Fix issue with received reliable confirmation being out of sync
+
+Release V10.8:
+	Fixed critical Linux and Android bug
+	WP8 Now builds correctly
+	Bandwidth counters
+	Tons of new comment documentation
+	Removed API.cs
+	Removed ArbiterAPI.cs
+	Removed ArbiterServer.cs
+	Removed ServerAPI.cs
+	Removed SimpleJSON.cs
+	Moved the BRPC class into SimpleNetworkedMonoBehavior and made it protected and sealed
+	Stripped down the Encryptor class
+	Updated NetworkedMonoBehavior to use Mathf.Lerp for floats
+
+Release V10.7:
+	Added new boolean getter to SimpleNetworkedMonoBehavior "IsServerOwner" to determine if the object is owned by the server
+	Fixed for look with split packets scaling while in loop
+	Fixed bug for joining split packets together
+
+Release V10.6:
+	Updated the crash that was happening on the master server during LINQ expression
+
+Release V10.5:
+	Fixed issue with AddNetworkVariable having null NetSync causing null reference
+	Add a disconnect to the main thread manager check
+	Main thread manager is now created at runtime when connecting or hosting
+	Updated the NetworkedMonoBehavior UI bugs on lerping position, rotation and scale
+	Updated the NetworkedMonoBehavior UI so that the colors match the action better
+
+Release V10.4:
+	Fixed issues with iOS not connecting and creating a player properly because of race conditions
+
+Release V10.3:
+	Fixed issues with static cache causing problems with multiple open Sockets
+	Fixed max player count for Master Server
+
+Release V10.2:
+	Fixed the Networking.Disconnect to not be dependent on the Networking manager
+
+Release V10.1:
+	Fix for the servers not updating the player count on the master server
+	Fixed spamming of the ping for master server
+	Fixed max player count
+
+Release V10:
+	New master server
+	Server browser updated to work with master server
+	Striped out arbiter from menu as it will be revamped and current functionality can be replaced with master server
+	Cleaned up BMSByte code
+	Removed warnings on editor script
+	Updated UI for NetworkedMonoBehavior
+	Updated disconnect bug on UDP
+	Updated Networking disconnect to validate owning NetWorker before closing webplayer policy server
+	Updated the quick start menu
+	Fixed server list class to support new master server get hosts method
+	Added master server ip string to the start menu
+	Start menu will register a server if a master server ip address is provided
+	Fixed bugs related to multiple connections in Networking manager
+
+Release V9.1:
+	Removed useless diagnostics log in the SimpleNetworkedMonoBehavior
+	Now you can have any derivitive of a SimpleNetworkedMonoBehavior on any child objects in a prefab and multiple ones
+
+Release V9:
+	Multiple SimpleNetworkedMonoBehavior scripts on one object
+	Fixed a bug that happens on a long running instance where rpc can cause out of range buffer issue
+
+Release V8:
+	Position, Rotation and Scale on the NetworkedMonoBehavior can now be independantly lerped
+	Updated the website tutorials to include running a headless linux server
+	Second upload to the Asset Store
+	Instantiate callbacks now only called on the machine that requested the instantiate
+
+Release V7.2 Hotfix:
+	Fixed new race condition with Networking Manager with Instantiate
+
+Release V7.1 Hotfix:
+	Fixed race condition with Networking Manager and its Awake method
+
+Release V7:
+	New callback method allowed for when you do a Networking.Instantiate
+	New NetworkStart virtual function that can be overridden and used rather than doing Networked based things in the Start function
+	Fixed bug where 2 classes that derive from SimpleNetworkedMonoBehavior are sorting differently on different builds
+
+Release V6:
+	Updated the exception text when instantiating objects not in the lookup for better steps to fix
+	New packet loss simulation for UDP (Can be set in StartGame script inspector *See StartGame.cs for implementation*)
+	New latency simulation for UDP (Can be set in StartGame script inspector *See StartGame.cs for implementation*)
+	Fixed error with Unity 5.0.1 having issues with the editor window
+	Made time inbetween pings longer, it was just too short
+	Added experimental frame number on inputs for authoritative input
+
+Release V5:
+	New enforced input based authoritative server controls (including mouse) on NetworkedMonoBehavior
+	NetworkedMonoBehavior now has client side prediction as an optional boolean
+	Updated the layout for the NetworkedMonoBehavior editor (Will make it look pretty very soon)
+	New disconnect method for when application quits on SimpleNetworkedMonoBehaviors
+	New destroy on disconnect option for NetworkedMonoBehaviors
+	New documentation layout on the website so that it is easier to look through
+	New autostart scene and script.  Now you can have unity auto build and start (N) clients for testing
+
+Release V4:
+	Added some helper messages and exceptions for new users
+	Fixed bug where Type byte was having issues being sent as a parameter of RPC
+	serverDisconnected event is now called on client when the host forceully closes with a string message
+	The main player is now accessable statically through NetworkedMonoBehavior.Player
+	Added new BeardedManStudios.Network.Cache static class for easy transient key-value storage (to become persistent)
+	Added a indexer for the BMSByte (opperator overloading for the [])
+	Fixed WriteRaw to prepend with proper byte before sending
+	Added an optional bool to the BMSByte constructor to prepare for raw
+	Cache class now communicates with server/client and allows for storing of data bound to a string key
+	Fixed bug with using alternative BMSByte constructor
+	Now WriteRaw can be reliable if a reliable key string is provided
+	Updated documentation to use NetworkedMonoBehavior as to not confuse new users
+
+Release V3:
+	Fixed warnings with Unity 5 and the platform checks in StartGame
+	Added new [NetSync] attribute so that it is easier than ever to replicate a variable across the Network
+	[NetSync] Now can have callbacks so that you can execute methods upon change of the value of the variables!
+	Added more comment documentation into NetworkedMonoBehavior
+	Commented NetRef
+	Added new global NetworkCallers enum
+	New Ping methods implemented in the core system to better track Network latency
+	Added license (seat) count to your profile page on the developer portal
+	Fixed runtime warning in NetWorker for editor catch exception e log
+
+Release V2:
+	Removed the serialize easy position, rotation and scale
+	Added new serialization of position, rotation and scale so that you can serialize individual dimensions (like just x or both x and z, etc.)
+	Updated comments for Simple Networked Mono Behavior class
+	Updated Start Game to use main thread manager rather than depend on Networking manager
+	Updated Start Game to not need the Update any longer
+	Added comments to the Start Game
+
+Release V1:
+	Moved all code from DLL to Unity
+	Fixed buffered RPCs not clearing correctly
+	Fixed issue with RealSenderId constantly being set to server identity
+	Using NetFX_CORE preprocessor so Windows Store and Windows Phone do not need a plugin DLL
+	Fixed connection issues with connecting Windows Store applications to servers on other operating systems
+	Added new MainThreadManager class, just call MainThreadManager.Run(method); to run a method on the main thread
+	Removed the duplication of main thread action handlers from NetWorkerKiller and ArbiterAPI
+	Updated ServerAPI to use new parse cloud RESTful methods
+	Update HTTP to have better support for get parameters
+	Improved stability of threaded HTTP request
+	Added HTTPS request fixes
+	Fixed Arbiter API to register online servers correctly
+	Fixed server browser
+
+
+Beta V15 Changelist:
+	Forge Networking
+		Fixed TCP so that it is now working along with the new UDP standards
+
+Beta V13.6 Changelist:
+	Forge Networking
+		Fixed server reading raw write bytes 2 times
+		Fixed issue with byte offset on raw read being 2 and not 1, ***** If anyone has their code to skip the first two bytes, this is not necessary as the extra 0 is no longer after the 1 (first byte).
+
+	Developer Portal
+		Now using heavily modified phpBB for forums
+
+Beta V13.5 Changelist:
+	Forge Networking
+		Fixed issue with NetworkingManager causing errors with no Network
+		Added an initialization call to NetworkingManager once a connection is established
+		Fixed issue with Unity 5 having null refs on normal built in references
+
+
+	Developer Portal
+		Prevent setting username as email
+		Show the bug/feature reporter username (if not email address)
+		Show the username of the person who replied on bugs/features
+		Do not allow replies from users who have not finished setting up their accounts on bugs/features
+		Fixed issue with forum threads containing special characters
+		Fixed issues with forums not opening specific links
+
+Beta V13.4 Changelist:
+	Forge Networking
+		Fixed race condition on hosting/connecting and events
+
+	Bare Metal
+		Fixed non-connecting issues as they are related to CallOnMainThread issues
+
+Beta V13.3 Changelist:
+	Forge Networking
+		Fixed initialization issue with arbiter api
+		Updated Exception logic
+		Can now throw an exception event with NetWorker.ThrowException
+		New exception handling sample scene
+		The NetWorker error event now just takes in any exception
+
+Beta V13.2 Changelist:
+	Forge Networking
+		Re-connecting to the same port gets an error unless the application is fully closed
+		Make the server call the read raw event as it is sending it off to all of the clients
+		Client Timeout event added - If a client doesn't get a response from the server in the specified milliseconds it will timeout and fire the timeoutDisconnected event
+
+	Developer Portal
+		Thread following
+		Forum notifications for followed threads
+		Fixed feedback not filtering complete features
+		Fixed invalid access on posing threads
+
+Beta V13.1 Changelist:
+	Forge Networking
+		Fixed collision issues when spawning objects where there was "floating" collision
+
+	Developer Portal
+		Forum threads can now be followed
+		Forum notifications (on site in forums) for followed threads on posts
+
+Beta V13 Changelist:
+	Forge Networking
+		Networking class now can ping a host and get the response time
+		Fix issue with disconnect being called at start
+		Client hangs and doesn't close, the instance needs to be killed
+		Updated Win8.1 and WP8.1 libs
+
+	Developer Portal
+		Require account to finish setup before posting on forums
+		Prevent locked threads from showing input box
+		Developers can now respond to each others bug reports and feature requests
+		Updated parent database object to do correct valid checks on blank new objects

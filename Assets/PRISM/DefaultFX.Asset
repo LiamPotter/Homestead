@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf70d726da084a46a532146eed95e86, type: 3}
+  m_Name: DefaultFX
+  m_EditorClassIdentifier: 
+  PresetDescription: Enter description for your preset.
+  presetType: 0
+  useBloom: 1
+  bloomType: 1
+  bloomUseScreenBlend: 0
+  bloomDownsample: 2
+  bloomBlurPasses: 6
+  bloomIntensity: 0.046
+  bloomThreshold: 0.1
+  useBloomStability: 1
+  useBloomLensdirt: 1
+  bloomLensdirtIntensity: 0.577
+  bloomLensdirtTexture: {fileID: 2800000, guid: 9337bbb7e51e1114fb460d8ea3a59af0,
+    type: 3}
+  useFullScreenBlur: 0
+  useUIBlur: 0
+  uiBlurGrabTextureFromPassNumber: 2
+  useFog: 0
+  fogAffectSkybox: 0
+  fogIntensity: 0
+  fogHeight: 5
+  fogStartPoint: 50
+  fogDistance: 30
+  fogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  fogEndColor: {r: 0, g: 0, b: 0, a: 1}
+  useDoF: 1
+  dofRadius: 0
+  dofSampleCount: 1
+  dofBokehFactor: 10
+  dofFocusPoint: 8.3
+  dofFocusDistance: 70.3
+  useNearBlur: 1
+  dofBlurSkybox: 0
+  dofNearFocusDistance: 13.1
+  dofForceEnableMedian: 0
+  useAmbientObscurance: 0
+  aoIntensity: 0.67
+  aoRadius: 0.5
+  aoBias: 0.5
+  aoDownsample: 0
+  aoBlurIterations: 3
+  aoBlurFilterDistance: 1.25
+  useAODistanceCutoff: 0
+  aoDistanceCutoffLength: 50
+  aoDistanceCutoffStart: 500
+  aoSampleCount: 12
+  aoBlurType: 1
+  aoLightingContribution: 1
+  useChromaticAb: 1
+  aberrationType: 0
+  chromIntensity: 0.0628
+  chromStart: 0.108
+  chromEnd: 1
+  useChromaticBlur: 1
+  chromaticBlurWidth: 1
+  useVignette: 1
+  vignetteStart: 0.829
+  vignetteEnd: 0.471
+  vignetteIntensity: 0.884
+  vignetteColor: {r: 0, g: 0, b: 0, a: 1}
+  useNoise: 0
+  noiseIntensity: 0.299
+  useTonemap: 1
+  toneType: 1
+  toneValues: {x: -1, y: 2.72, z: 0.15}
+  secondaryToneValues: {x: 0.59, y: 0.14, z: 0.14}
+  useGammaCorrection: 0
+  gammaValue: 1.37
+  useExposure: 0
+  exposureSpeed: 2.35
+  exposureMiddleGrey: 0.361
+  exposureLowerLimit: 0.4
+  exposureUpperLimit: 9
+  useLUT: 1
+  lutPath: LUT_Grim
+  lutIntensity: 1
+  twoDLookupTex: {fileID: 2800000, guid: e605cfa5199517a49a8738ec2d395173, type: 3}
+  useSecondLut: 0
+  secondaryLutPath: 
+  secondaryTwoDLookupTex: {fileID: 2800000, guid: d29da18a649151140900793cd724d59c,
+    type: 3}
+  secondaryLutLerpAmount: 0
+  useNV: 0
+  nvColor: {r: 0.11724138, g: 0, b: 1, a: 0}
+  nvBleachColor: {r: 0, g: 0.5294118, b: 0.28843808, a: 0}
+  nvLightingContrib: 0.0447
+  nvLightSensitivity: 0.3
+  useRays: 1
+  rayWeight: 1
+  rayColor: {r: 1, g: 0, b: 0.35172415, a: 1}
+  rayThreshold: {r: 0.53095394, g: 0.49502593, b: 0.8014706, a: 1}

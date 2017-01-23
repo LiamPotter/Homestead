@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf70d726da084a46a532146eed95e86, type: 3}
+  m_Name: Preset_DownToOne
+  m_EditorClassIdentifier: 
+  PresetDescription: Used in Down To One, Vignette is applied as an on-hit, and health
+    is used to fade the first LUT in for a desaturate effect on low HP
+  presetType: 0
+  useBloom: 1
+  bloomType: 1
+  bloomUseScreenBlend: 0
+  bloomDownsample: 2
+  bloomBlurPasses: 6
+  bloomIntensity: 0.2
+  bloomThreshold: 2
+  useBloomStability: 0
+  useBloomLensdirt: 1
+  bloomLensdirtIntensity: 1.5
+  bloomLensdirtTexture: {fileID: 2800000, guid: 9337bbb7e51e1114fb460d8ea3a59af0,
+    type: 3}
+  useFullScreenBlur: 0
+  useUIBlur: 0
+  uiBlurGrabTextureFromPassNumber: 2
+  useFog: 0
+  fogAffectSkybox: 0
+  fogIntensity: 1
+  fogStartPoint: 200
+  fogDistance: 500
+  fogColor: {r: 0.87843144, g: 0.8000001, b: 0.76470596, a: 0.309}
+  fogEndColor: {r: 1, g: 0.86666673, b: 0.7058824, a: 1}
+  useDoF: 1
+  dofRadius: 0.67
+  dofSampleCount: 0
+  dofBokehFactor: 300
+  dofFocusPoint: 300
+  dofFocusDistance: 100
+  useNearBlur: 0
+  dofBlurSkybox: 1
+  dofNearFocusDistance: 15
+  dofForceDisableMedian: 0
+  useAmbientObscurance: 1
+  aoIntensity: 0.72
+  aoRadius: 0.85
+  aoBias: 0.1
+  aoDownsample: 0
+  aoBlurIterations: 1
+  aoBlurFilterDistance: 1.25
+  useAODistanceCutoff: 0
+  aoDistanceCutoffLength: 50
+  aoDistanceCutoffStart: 500
+  aoSampleCount: 3
+  aoBlurType: 2
+  aoLightingContribution: 1
+  useChromaticAb: 0
+  aberrationType: 1
+  chromIntensity: 0
+  chromStart: 0.1
+  chromEnd: 1
+  useChromaticBlur: 0
+  chromaticBlurWidth: 0
+  useVignette: 1
+  vignetteStart: 0.65
+  vignetteEnd: 0
+  vignetteIntensity: 0
+  vignetteColor: {r: 0, g: 0, b: 0, a: 1}
+  useNoise: 0
+  noiseIntensity: 0.707
+  useTonemap: 1
+  toneType: 2
+  toneValues: {x: 4.08, y: 0.37, z: 2.4}
+  secondaryToneValues: {x: 1.97, y: 0.45, z: 0}
+  useGammaCorrection: 1
+  gammaValue: 1
+  useExposure: 0
+  exposureSpeed: 0.8
+  exposureMiddleGrey: 0.12
+  exposureLowerLimit: 0.4
+  exposureUpperLimit: 8
+  useLUT: 1
+  lutPath: LUT_DesaturateDarker
+  lutIntensity: 0
+  twoDLookupTex: {fileID: 2800000, guid: 2533dc9934bc3ba40ab9ff45122f3896, type: 3}
+  useSecondLut: 1
+  secondaryLutPath: LUT_DownToOne
+  secondaryTwoDLookupTex: {fileID: 2800000, guid: 11dba95ced266bc43a39172017d36a90,
+    type: 3}
+  secondaryLutLerpAmount: 1
+  useNV: 0
+  nvColor: {r: 0, g: 1, b: 0.1724138, a: 0}
+  nvBleachColor: {r: 1, g: 1, b: 1, a: 0}
+  nvLightingContrib: 0
+  nvLightSensitivity: 54.2
+  useRays: 0
+  rayWeight: 0.2
+  rayColor: {r: 1, g: 1, b: 1, a: 1}
+  rayThreshold: {r: 0.87, g: 0.74, b: 0.65, a: 1}
