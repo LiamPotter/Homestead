@@ -58,6 +58,7 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
         base.UnityUpdate();
         if (!IsOwner)
             return;
+       
         if (CharController.isGrounded)
             isGrounded = true;
         if (!CharController.isGrounded)
@@ -104,6 +105,7 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
         TriToolHub.SetRotation(CharacterModel, ModelLookVector, Space.Self);
         #endregion
     }
+   
     //protected override void NonOwnerUpdate()
     //{
     //    base.NonOwnerUpdate();
