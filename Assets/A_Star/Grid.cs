@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-public class Grid : MonoBehaviour {
+using BeardedManStudios.Network;
+public class Grid : NetworkedMonoBehavior {
     public bool displayGridGizmos;
     public LayerMask unwalkableMask;
     public Vector2 gridWorldSize;
@@ -11,14 +12,20 @@ public class Grid : MonoBehaviour {
 
     float nodeDiameter;
     int gridSizeX, gridSizeY;
+
+    
     void Awake ()
     {
         nodeDiameter = nodeRadius * 2;
         gridSizeX = Mathf.RoundToInt( gridWorldSize.x / nodeDiameter);
         gridSizeY = Mathf.RoundToInt(gridWorldSize.y / nodeDiameter);
-
+        
         CreateGrid();
+        
     }
+  
+  
+
     public float NodeDiameter
     {
         get { return nodeDiameter; }

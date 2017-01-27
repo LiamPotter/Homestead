@@ -27,6 +27,7 @@ public class FarmTile : NetworkedMonoBehavior {
     // Update is called once per frame
     protected override void UnityUpdate() {
         base.UnityUpdate();
+
         if (scale != Vector3.zero)
             transform.localScale = scale;
         if (mR.material != mats[matIndex])
