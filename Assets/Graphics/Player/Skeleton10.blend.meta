@@ -1,0 +1,4781 @@
+fileFormatVersion: 2
+guid: 17615a2cc0f8626448fd8247b6fc1b5a
+timeCreated: 1485483418
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: A_
+    100002: Brow_L
+    100004: Brow_R
+    100006: BrowInner_L
+    100008: BrowInner_R
+    100010: BrowOuter_L
+    100012: BrowOuter_R
+    100014: CoatTail_L
+    100016: CoatTail_R
+    100018: Cuff_L
+    100020: Cuff_R
+    100022: Elbow_L
+    100024: Elbow_R
+    100026: EyeScale_L
+    100028: EyeScale_R
+    100030: Foot_L
+    100032: Foot_R
+    100034: Forearm_L
+    100036: Forearm_R
+    100038: Hand_L
+    100040: Hand_R
+    100042: HandIK_L
+    100044: HandIK_R
+    100046: Hat
+    100048: Hat_0
+    100050: HatTip_Back
+    100052: HatTip_Front
+    100054: Head
+    100056: Hips
+    100058: Index_01_L
+    100060: Index_01_R
+    100062: Index_02_L
+    100064: Index_02_R
+    100066: Index_03_L
+    100068: Index_03_R
+    100070: Jaw
+    100072: lapel_L
+    100074: lapel_R
+    100076: Lid_L
+    100078: Lid_R
+    100080: Middle_01_L
+    100082: Middle_01_R
+    100084: Middle_02_L
+    100086: Middle_02_R
+    100088: Middle_03_L
+    100090: Middle_03_R
+    100092: Mouth_L
+    100094: Mouth_R
+    100096: Neck
+    100098: Perilous_Cliff
+    100100: Pete
+    100102: Pete_s_Head
+    100104: Pinky_01_L
+    100106: Pinky_01_R
+    100108: Pinky_02_L
+    100110: Pinky_02_R
+    100112: Pinky_03_L
+    100114: Pinky_03_R
+    100116: Ring_01_L
+    100118: Ring_01_R
+    100120: Ring_02_L
+    100122: Ring_02_R
+    100124: Ring_03_L
+    100126: Ring_03_R
+    100128: Root
+    100130: Shin_L
+    100132: Shin_R
+    100134: Shoulder_L
+    100136: Shoulder_R
+    100138: //RootNode
+    100140: Spine_01
+    100142: Spine_02
+    100144: Spine_03
+    100146: Thigh_L
+    100148: Thigh_R
+    100150: Thumb_01_L
+    100152: Thumb_01_R
+    100154: Thumb_02_L
+    100156: Thumb_02_R
+    100158: Thumb_03_L
+    100160: Thumb_03_R
+    100162: Toe_L
+    100164: Toe_R
+    100166: UpperArm_L
+    100168: UpperArm_R
+    100170: W_Circle
+    100172: W_Clavicle_L
+    100174: W_Clavicle_R
+    100176: W_Coat_L
+    100178: W_Coat_R
+    100180: W_Cuffs
+    100182: W_EyeControllers
+    100184: W_EyeLid
+    100186: W_EyeScale
+    100188: W_Feet
+    100190: W_Finger
+    100192: W_Hand
+    100194: W_Hat
+    100196: W_HatTweak
+    100198: W_Jaw
+    100200: W_Knee
+    100202: W_Lapel
+    100204: W_Neck
+    100206: W_Rib
+    100208: W_Root
+    100210: W_Skull
+    100212: W_Square
+    100214: W_Toe
+    400000: A_
+    400002: Brow_L
+    400004: Brow_R
+    400006: BrowInner_L
+    400008: BrowInner_R
+    400010: BrowOuter_L
+    400012: BrowOuter_R
+    400014: CoatTail_L
+    400016: CoatTail_R
+    400018: Cuff_L
+    400020: Cuff_R
+    400022: Elbow_L
+    400024: Elbow_R
+    400026: EyeScale_L
+    400028: EyeScale_R
+    400030: Foot_L
+    400032: Foot_R
+    400034: Forearm_L
+    400036: Forearm_R
+    400038: Hand_L
+    400040: Hand_R
+    400042: HandIK_L
+    400044: HandIK_R
+    400046: Hat
+    400048: Hat_0
+    400050: HatTip_Back
+    400052: HatTip_Front
+    400054: Head
+    400056: Hips
+    400058: Index_01_L
+    400060: Index_01_R
+    400062: Index_02_L
+    400064: Index_02_R
+    400066: Index_03_L
+    400068: Index_03_R
+    400070: Jaw
+    400072: lapel_L
+    400074: lapel_R
+    400076: Lid_L
+    400078: Lid_R
+    400080: Middle_01_L
+    400082: Middle_01_R
+    400084: Middle_02_L
+    400086: Middle_02_R
+    400088: Middle_03_L
+    400090: Middle_03_R
+    400092: Mouth_L
+    400094: Mouth_R
+    400096: Neck
+    400098: Perilous_Cliff
+    400100: Pete
+    400102: Pete_s_Head
+    400104: Pinky_01_L
+    400106: Pinky_01_R
+    400108: Pinky_02_L
+    400110: Pinky_02_R
+    400112: Pinky_03_L
+    400114: Pinky_03_R
+    400116: Ring_01_L
+    400118: Ring_01_R
+    400120: Ring_02_L
+    400122: Ring_02_R
+    400124: Ring_03_L
+    400126: Ring_03_R
+    400128: Root
+    400130: Shin_L
+    400132: Shin_R
+    400134: Shoulder_L
+    400136: Shoulder_R
+    400138: //RootNode
+    400140: Spine_01
+    400142: Spine_02
+    400144: Spine_03
+    400146: Thigh_L
+    400148: Thigh_R
+    400150: Thumb_01_L
+    400152: Thumb_01_R
+    400154: Thumb_02_L
+    400156: Thumb_02_R
+    400158: Thumb_03_L
+    400160: Thumb_03_R
+    400162: Toe_L
+    400164: Toe_R
+    400166: UpperArm_L
+    400168: UpperArm_R
+    400170: W_Circle
+    400172: W_Clavicle_L
+    400174: W_Clavicle_R
+    400176: W_Coat_L
+    400178: W_Coat_R
+    400180: W_Cuffs
+    400182: W_EyeControllers
+    400184: W_EyeLid
+    400186: W_EyeScale
+    400188: W_Feet
+    400190: W_Finger
+    400192: W_Hand
+    400194: W_Hat
+    400196: W_HatTweak
+    400198: W_Jaw
+    400200: W_Knee
+    400202: W_Lapel
+    400204: W_Neck
+    400206: W_Rib
+    400208: W_Root
+    400210: W_Skull
+    400212: W_Square
+    400214: W_Toe
+    2300000: Perilous_Cliff
+    2300002: W_Circle
+    2300004: W_Clavicle_L
+    2300006: W_Clavicle_R
+    2300008: W_Coat_L
+    2300010: W_Coat_R
+    2300012: W_Cuffs
+    2300014: W_EyeControllers
+    2300016: W_EyeLid
+    2300018: W_EyeScale
+    2300020: W_Feet
+    2300022: W_Finger
+    2300024: W_Hand
+    2300026: W_Hat
+    2300028: W_HatTweak
+    2300030: W_Jaw
+    2300032: W_Knee
+    2300034: W_Lapel
+    2300036: W_Neck
+    2300038: W_Rib
+    2300040: W_Root
+    2300042: W_Skull
+    2300044: W_Square
+    2300046: W_Toe
+    3300000: Perilous_Cliff
+    3300002: W_Circle
+    3300004: W_Clavicle_L
+    3300006: W_Clavicle_R
+    3300008: W_Coat_L
+    3300010: W_Coat_R
+    3300012: W_Cuffs
+    3300014: W_EyeControllers
+    3300016: W_EyeLid
+    3300018: W_EyeScale
+    3300020: W_Feet
+    3300022: W_Finger
+    3300024: W_Hand
+    3300026: W_Hat
+    3300028: W_HatTweak
+    3300030: W_Jaw
+    3300032: W_Knee
+    3300034: W_Lapel
+    3300036: W_Neck
+    3300038: W_Rib
+    3300040: W_Root
+    3300042: W_Skull
+    3300044: W_Square
+    3300046: W_Toe
+    4300000: Perilous_Cliff
+    4300002: W_Lapel
+    4300004: W_EyeScale
+    4300006: W_EyeLid
+    4300008: W_EyeControllers
+    4300010: W_Hand
+    4300012: W_Skull
+    4300014: W_Feet
+    4300016: W_Neck
+    4300018: W_Jaw
+    4300020: W_Clavicle_R
+    4300022: W_Clavicle_L
+    4300024: W_Cuffs
+    4300026: W_Hat
+    4300028: W_HatTweak
+    4300030: W_Finger
+    4300032: W_Circle
+    4300034: W_Square
+    4300036: W_Rib
+    4300038: W_Knee
+    4300040: W_Toe
+    4300042: W_Coat_R
+    4300044: W_Coat_L
+    4300046: W_Root
+    4300048: Pete
+    4300050: Hat
+    4300052: Pete_s_Head
+    7400000: Default Take
+    7400002: Idle
+    7400004: Jump_01
+    7400006: Jump_02
+    7400008: Land
+    7400010: Landing
+    7400012: LedgeGrab
+    7400014: LedgeShimmy_L
+    7400016: LedgeShimmy_R
+    7400018: Meditate
+    7400020: Reaction_01
+    7400022: Reaction_02
+    7400024: Reaction_03
+    7400026: Reaction_04
+    7400028: Run
+    7400030: Sprint
+    7400032: Swim
+    7400034: Walk
+    7400036: Idle0
+    9500000: //RootNode
+    13700000: Hat
+    13700002: Pete
+    13700004: Pete_s_Head
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle0
+      takeName: Idle
+      firstFrame: -1
+      lastFrame: 414
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: A_
+        weight: 1
+      - path: A_/Root
+        weight: 1
+      - path: A_/Root/Elbow_L
+        weight: 1
+      - path: A_/Root/Elbow_R
+        weight: 1
+      - path: A_/Root/HandIK_L
+        weight: 1
+      - path: A_/Root/HandIK_R
+        weight: 1
+      - path: A_/Root/Hips
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_L
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowInner_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowOuter_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowInner_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowOuter_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Back
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Front
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Jaw
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/lapel_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Cuff_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L/Index_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L/Middle_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L/Pinky_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L/Ring_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L/Thumb_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/lapel_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Cuff_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R/Index_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R/Middle_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R/Pinky_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R/Ring_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R/Thumb_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L/Toe_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R/Toe_R
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: Perilous_Cliff
+        weight: 1
+      - path: Pete
+        weight: 1
+      - path: Pete_s_Head
+        weight: 1
+      - path: W_Circle
+        weight: 1
+      - path: W_Clavicle_L
+        weight: 1
+      - path: W_Clavicle_R
+        weight: 1
+      - path: W_Coat_L
+        weight: 1
+      - path: W_Coat_R
+        weight: 1
+      - path: W_Cuffs
+        weight: 1
+      - path: W_EyeControllers
+        weight: 1
+      - path: W_EyeLid
+        weight: 1
+      - path: W_EyeScale
+        weight: 1
+      - path: W_Feet
+        weight: 1
+      - path: W_Finger
+        weight: 1
+      - path: W_Hand
+        weight: 1
+      - path: W_Hat
+        weight: 1
+      - path: W_HatTweak
+        weight: 1
+      - path: W_Jaw
+        weight: 1
+      - path: W_Knee
+        weight: 1
+      - path: W_Lapel
+        weight: 1
+      - path: W_Neck
+        weight: 1
+      - path: W_Rib
+        weight: 1
+      - path: W_Root
+        weight: 1
+      - path: W_Skull
+        weight: 1
+      - path: W_Square
+        weight: 1
+      - path: W_Toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: -1
+      lastFrame: 414
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: A_
+        weight: 1
+      - path: A_/Root
+        weight: 1
+      - path: A_/Root/Elbow_L
+        weight: 1
+      - path: A_/Root/Elbow_R
+        weight: 1
+      - path: A_/Root/HandIK_L
+        weight: 1
+      - path: A_/Root/HandIK_R
+        weight: 1
+      - path: A_/Root/Hips
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_L
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowInner_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowOuter_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowInner_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowOuter_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Back
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Front
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Jaw
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/lapel_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Cuff_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L/Index_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L/Middle_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L/Pinky_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L/Ring_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L/Thumb_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/lapel_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Cuff_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R/Index_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R/Middle_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R/Pinky_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R/Ring_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R/Thumb_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L/Toe_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R/Toe_R
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: Perilous_Cliff
+        weight: 1
+      - path: Pete
+        weight: 1
+      - path: Pete_s_Head
+        weight: 1
+      - path: W_Circle
+        weight: 1
+      - path: W_Clavicle_L
+        weight: 1
+      - path: W_Clavicle_R
+        weight: 1
+      - path: W_Coat_L
+        weight: 1
+      - path: W_Coat_R
+        weight: 1
+      - path: W_Cuffs
+        weight: 1
+      - path: W_EyeControllers
+        weight: 1
+      - path: W_EyeLid
+        weight: 1
+      - path: W_EyeScale
+        weight: 1
+      - path: W_Feet
+        weight: 1
+      - path: W_Finger
+        weight: 1
+      - path: W_Hand
+        weight: 1
+      - path: W_Hat
+        weight: 1
+      - path: W_HatTweak
+        weight: 1
+      - path: W_Jaw
+        weight: 1
+      - path: W_Knee
+        weight: 1
+      - path: W_Lapel
+        weight: 1
+      - path: W_Neck
+        weight: 1
+      - path: W_Rib
+        weight: 1
+      - path: W_Root
+        weight: 1
+      - path: W_Skull
+        weight: 1
+      - path: W_Square
+        weight: 1
+      - path: W_Toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump_01
+      takeName: Jump_01
+      firstFrame: -1
+      lastFrame: 116
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: A_
+        weight: 1
+      - path: A_/Root
+        weight: 1
+      - path: A_/Root/Elbow_L
+        weight: 1
+      - path: A_/Root/Elbow_R
+        weight: 1
+      - path: A_/Root/HandIK_L
+        weight: 1
+      - path: A_/Root/HandIK_R
+        weight: 1
+      - path: A_/Root/Hips
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_L
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowInner_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowOuter_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowInner_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowOuter_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Back
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Front
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Jaw
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/lapel_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Cuff_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L/Index_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L/Middle_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L/Pinky_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L/Ring_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L/Thumb_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/lapel_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Cuff_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R/Index_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R/Middle_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R/Pinky_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R/Ring_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R/Thumb_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L/Toe_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R/Toe_R
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: Perilous_Cliff
+        weight: 1
+      - path: Pete
+        weight: 1
+      - path: Pete_s_Head
+        weight: 1
+      - path: W_Circle
+        weight: 1
+      - path: W_Clavicle_L
+        weight: 1
+      - path: W_Clavicle_R
+        weight: 1
+      - path: W_Coat_L
+        weight: 1
+      - path: W_Coat_R
+        weight: 1
+      - path: W_Cuffs
+        weight: 1
+      - path: W_EyeControllers
+        weight: 1
+      - path: W_EyeLid
+        weight: 1
+      - path: W_EyeScale
+        weight: 1
+      - path: W_Feet
+        weight: 1
+      - path: W_Finger
+        weight: 1
+      - path: W_Hand
+        weight: 1
+      - path: W_Hat
+        weight: 1
+      - path: W_HatTweak
+        weight: 1
+      - path: W_Jaw
+        weight: 1
+      - path: W_Knee
+        weight: 1
+      - path: W_Lapel
+        weight: 1
+      - path: W_Neck
+        weight: 1
+      - path: W_Rib
+        weight: 1
+      - path: W_Root
+        weight: 1
+      - path: W_Skull
+        weight: 1
+      - path: W_Square
+        weight: 1
+      - path: W_Toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump_02
+      takeName: Jump_02
+      firstFrame: -1
+      lastFrame: 116
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: A_
+        weight: 1
+      - path: A_/Root
+        weight: 1
+      - path: A_/Root/Elbow_L
+        weight: 1
+      - path: A_/Root/Elbow_R
+        weight: 1
+      - path: A_/Root/HandIK_L
+        weight: 1
+      - path: A_/Root/HandIK_R
+        weight: 1
+      - path: A_/Root/Hips
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_L
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowInner_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowOuter_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowInner_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowOuter_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Back
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Front
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Jaw
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/lapel_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Cuff_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L/Index_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L/Middle_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L/Pinky_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L/Ring_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L/Thumb_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/lapel_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Cuff_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R/Index_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R/Middle_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R/Pinky_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R/Ring_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R/Thumb_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L/Toe_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R/Toe_R
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: Perilous_Cliff
+        weight: 1
+      - path: Pete
+        weight: 1
+      - path: Pete_s_Head
+        weight: 1
+      - path: W_Circle
+        weight: 1
+      - path: W_Clavicle_L
+        weight: 1
+      - path: W_Clavicle_R
+        weight: 1
+      - path: W_Coat_L
+        weight: 1
+      - path: W_Coat_R
+        weight: 1
+      - path: W_Cuffs
+        weight: 1
+      - path: W_EyeControllers
+        weight: 1
+      - path: W_EyeLid
+        weight: 1
+      - path: W_EyeScale
+        weight: 1
+      - path: W_Feet
+        weight: 1
+      - path: W_Finger
+        weight: 1
+      - path: W_Hand
+        weight: 1
+      - path: W_Hat
+        weight: 1
+      - path: W_HatTweak
+        weight: 1
+      - path: W_Jaw
+        weight: 1
+      - path: W_Knee
+        weight: 1
+      - path: W_Lapel
+        weight: 1
+      - path: W_Neck
+        weight: 1
+      - path: W_Rib
+        weight: 1
+      - path: W_Root
+        weight: 1
+      - path: W_Skull
+        weight: 1
+      - path: W_Square
+        weight: 1
+      - path: W_Toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Land
+      takeName: Land
+      firstFrame: -1
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: A_
+        weight: 1
+      - path: A_/Root
+        weight: 1
+      - path: A_/Root/Elbow_L
+        weight: 1
+      - path: A_/Root/Elbow_R
+        weight: 1
+      - path: A_/Root/HandIK_L
+        weight: 1
+      - path: A_/Root/HandIK_R
+        weight: 1
+      - path: A_/Root/Hips
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_L
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowInner_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowOuter_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowInner_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowOuter_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Back
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Front
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Jaw
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/lapel_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Cuff_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L/Index_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L/Middle_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L/Pinky_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L/Ring_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L/Thumb_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/lapel_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Cuff_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R/Index_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R/Middle_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R/Pinky_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R/Ring_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R/Thumb_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L/Toe_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R/Toe_R
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: Perilous_Cliff
+        weight: 1
+      - path: Pete
+        weight: 1
+      - path: Pete_s_Head
+        weight: 1
+      - path: W_Circle
+        weight: 1
+      - path: W_Clavicle_L
+        weight: 1
+      - path: W_Clavicle_R
+        weight: 1
+      - path: W_Coat_L
+        weight: 1
+      - path: W_Coat_R
+        weight: 1
+      - path: W_Cuffs
+        weight: 1
+      - path: W_EyeControllers
+        weight: 1
+      - path: W_EyeLid
+        weight: 1
+      - path: W_EyeScale
+        weight: 1
+      - path: W_Feet
+        weight: 1
+      - path: W_Finger
+        weight: 1
+      - path: W_Hand
+        weight: 1
+      - path: W_Hat
+        weight: 1
+      - path: W_HatTweak
+        weight: 1
+      - path: W_Jaw
+        weight: 1
+      - path: W_Knee
+        weight: 1
+      - path: W_Lapel
+        weight: 1
+      - path: W_Neck
+        weight: 1
+      - path: W_Rib
+        weight: 1
+      - path: W_Root
+        weight: 1
+      - path: W_Skull
+        weight: 1
+      - path: W_Square
+        weight: 1
+      - path: W_Toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Landing
+      takeName: Landing
+      firstFrame: -1
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: A_
+        weight: 1
+      - path: A_/Root
+        weight: 1
+      - path: A_/Root/Elbow_L
+        weight: 1
+      - path: A_/Root/Elbow_R
+        weight: 1
+      - path: A_/Root/HandIK_L
+        weight: 1
+      - path: A_/Root/HandIK_R
+        weight: 1
+      - path: A_/Root/Hips
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_L
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowInner_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowOuter_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowInner_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowOuter_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Back
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Front
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Jaw
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/lapel_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Cuff_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L/Index_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L/Middle_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L/Pinky_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L/Ring_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L/Thumb_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/lapel_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Cuff_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R/Index_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R/Middle_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R/Pinky_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R/Ring_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R/Thumb_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L/Toe_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R/Toe_R
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: Perilous_Cliff
+        weight: 1
+      - path: Pete
+        weight: 1
+      - path: Pete_s_Head
+        weight: 1
+      - path: W_Circle
+        weight: 1
+      - path: W_Clavicle_L
+        weight: 1
+      - path: W_Clavicle_R
+        weight: 1
+      - path: W_Coat_L
+        weight: 1
+      - path: W_Coat_R
+        weight: 1
+      - path: W_Cuffs
+        weight: 1
+      - path: W_EyeControllers
+        weight: 1
+      - path: W_EyeLid
+        weight: 1
+      - path: W_EyeScale
+        weight: 1
+      - path: W_Feet
+        weight: 1
+      - path: W_Finger
+        weight: 1
+      - path: W_Hand
+        weight: 1
+      - path: W_Hat
+        weight: 1
+      - path: W_HatTweak
+        weight: 1
+      - path: W_Jaw
+        weight: 1
+      - path: W_Knee
+        weight: 1
+      - path: W_Lapel
+        weight: 1
+      - path: W_Neck
+        weight: 1
+      - path: W_Rib
+        weight: 1
+      - path: W_Root
+        weight: 1
+      - path: W_Skull
+        weight: 1
+      - path: W_Square
+        weight: 1
+      - path: W_Toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: LedgeGrab
+      takeName: LedgeGrab
+      firstFrame: -3
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: A_
+        weight: 1
+      - path: A_/Root
+        weight: 1
+      - path: A_/Root/Elbow_L
+        weight: 1
+      - path: A_/Root/Elbow_R
+        weight: 1
+      - path: A_/Root/HandIK_L
+        weight: 1
+      - path: A_/Root/HandIK_R
+        weight: 1
+      - path: A_/Root/Hips
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_L
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowInner_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowOuter_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowInner_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowOuter_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Back
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Front
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Jaw
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/lapel_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Cuff_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L/Index_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L/Middle_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L/Pinky_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L/Ring_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L/Thumb_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/lapel_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Cuff_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R/Index_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R/Middle_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R/Pinky_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R/Ring_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R/Thumb_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L/Toe_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R/Toe_R
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: Perilous_Cliff
+        weight: 1
+      - path: Pete
+        weight: 1
+      - path: Pete_s_Head
+        weight: 1
+      - path: W_Circle
+        weight: 1
+      - path: W_Clavicle_L
+        weight: 1
+      - path: W_Clavicle_R
+        weight: 1
+      - path: W_Coat_L
+        weight: 1
+      - path: W_Coat_R
+        weight: 1
+      - path: W_Cuffs
+        weight: 1
+      - path: W_EyeControllers
+        weight: 1
+      - path: W_EyeLid
+        weight: 1
+      - path: W_EyeScale
+        weight: 1
+      - path: W_Feet
+        weight: 1
+      - path: W_Finger
+        weight: 1
+      - path: W_Hand
+        weight: 1
+      - path: W_Hat
+        weight: 1
+      - path: W_HatTweak
+        weight: 1
+      - path: W_Jaw
+        weight: 1
+      - path: W_Knee
+        weight: 1
+      - path: W_Lapel
+        weight: 1
+      - path: W_Neck
+        weight: 1
+      - path: W_Rib
+        weight: 1
+      - path: W_Root
+        weight: 1
+      - path: W_Skull
+        weight: 1
+      - path: W_Square
+        weight: 1
+      - path: W_Toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: LedgeShimmy_L
+      takeName: LedgeShimmy_L
+      firstFrame: -3
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: A_
+        weight: 1
+      - path: A_/Root
+        weight: 1
+      - path: A_/Root/Elbow_L
+        weight: 1
+      - path: A_/Root/Elbow_R
+        weight: 1
+      - path: A_/Root/HandIK_L
+        weight: 1
+      - path: A_/Root/HandIK_R
+        weight: 1
+      - path: A_/Root/Hips
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_L
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowInner_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowOuter_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowInner_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowOuter_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Back
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Front
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Jaw
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/lapel_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Cuff_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L/Index_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L/Middle_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L/Pinky_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L/Ring_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L/Thumb_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/lapel_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Cuff_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R/Index_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R/Middle_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R/Pinky_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R/Ring_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R/Thumb_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L/Toe_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R/Toe_R
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: Perilous_Cliff
+        weight: 1
+      - path: Pete
+        weight: 1
+      - path: Pete_s_Head
+        weight: 1
+      - path: W_Circle
+        weight: 1
+      - path: W_Clavicle_L
+        weight: 1
+      - path: W_Clavicle_R
+        weight: 1
+      - path: W_Coat_L
+        weight: 1
+      - path: W_Coat_R
+        weight: 1
+      - path: W_Cuffs
+        weight: 1
+      - path: W_EyeControllers
+        weight: 1
+      - path: W_EyeLid
+        weight: 1
+      - path: W_EyeScale
+        weight: 1
+      - path: W_Feet
+        weight: 1
+      - path: W_Finger
+        weight: 1
+      - path: W_Hand
+        weight: 1
+      - path: W_Hat
+        weight: 1
+      - path: W_HatTweak
+        weight: 1
+      - path: W_Jaw
+        weight: 1
+      - path: W_Knee
+        weight: 1
+      - path: W_Lapel
+        weight: 1
+      - path: W_Neck
+        weight: 1
+      - path: W_Rib
+        weight: 1
+      - path: W_Root
+        weight: 1
+      - path: W_Skull
+        weight: 1
+      - path: W_Square
+        weight: 1
+      - path: W_Toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: LedgeShimmy_R
+      takeName: LedgeShimmy_R
+      firstFrame: -3
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: A_
+        weight: 1
+      - path: A_/Root
+        weight: 1
+      - path: A_/Root/Elbow_L
+        weight: 1
+      - path: A_/Root/Elbow_R
+        weight: 1
+      - path: A_/Root/HandIK_L
+        weight: 1
+      - path: A_/Root/HandIK_R
+        weight: 1
+      - path: A_/Root/Hips
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_L
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowInner_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowOuter_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowInner_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowOuter_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Back
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Front
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Jaw
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/lapel_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Cuff_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L/Index_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L/Middle_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L/Pinky_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L/Ring_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L/Thumb_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/lapel_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Cuff_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R/Index_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R/Middle_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R/Pinky_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R/Ring_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R/Thumb_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L/Toe_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R/Toe_R
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: Perilous_Cliff
+        weight: 1
+      - path: Pete
+        weight: 1
+      - path: Pete_s_Head
+        weight: 1
+      - path: W_Circle
+        weight: 1
+      - path: W_Clavicle_L
+        weight: 1
+      - path: W_Clavicle_R
+        weight: 1
+      - path: W_Coat_L
+        weight: 1
+      - path: W_Coat_R
+        weight: 1
+      - path: W_Cuffs
+        weight: 1
+      - path: W_EyeControllers
+        weight: 1
+      - path: W_EyeLid
+        weight: 1
+      - path: W_EyeScale
+        weight: 1
+      - path: W_Feet
+        weight: 1
+      - path: W_Finger
+        weight: 1
+      - path: W_Hand
+        weight: 1
+      - path: W_Hat
+        weight: 1
+      - path: W_HatTweak
+        weight: 1
+      - path: W_Jaw
+        weight: 1
+      - path: W_Knee
+        weight: 1
+      - path: W_Lapel
+        weight: 1
+      - path: W_Neck
+        weight: 1
+      - path: W_Rib
+        weight: 1
+      - path: W_Root
+        weight: 1
+      - path: W_Skull
+        weight: 1
+      - path: W_Square
+        weight: 1
+      - path: W_Toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Meditate
+      takeName: Meditate
+      firstFrame: -1
+      lastFrame: 93
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: A_
+        weight: 1
+      - path: A_/Root
+        weight: 1
+      - path: A_/Root/Elbow_L
+        weight: 1
+      - path: A_/Root/Elbow_R
+        weight: 1
+      - path: A_/Root/HandIK_L
+        weight: 1
+      - path: A_/Root/HandIK_R
+        weight: 1
+      - path: A_/Root/Hips
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_L
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowInner_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowOuter_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowInner_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowOuter_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Back
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Front
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Jaw
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/lapel_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Cuff_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L/Index_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L/Middle_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L/Pinky_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L/Ring_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L/Thumb_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/lapel_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Cuff_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R/Index_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R/Middle_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R/Pinky_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R/Ring_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R/Thumb_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L/Toe_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R/Toe_R
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: Perilous_Cliff
+        weight: 1
+      - path: Pete
+        weight: 1
+      - path: Pete_s_Head
+        weight: 1
+      - path: W_Circle
+        weight: 1
+      - path: W_Clavicle_L
+        weight: 1
+      - path: W_Clavicle_R
+        weight: 1
+      - path: W_Coat_L
+        weight: 1
+      - path: W_Coat_R
+        weight: 1
+      - path: W_Cuffs
+        weight: 1
+      - path: W_EyeControllers
+        weight: 1
+      - path: W_EyeLid
+        weight: 1
+      - path: W_EyeScale
+        weight: 1
+      - path: W_Feet
+        weight: 1
+      - path: W_Finger
+        weight: 1
+      - path: W_Hand
+        weight: 1
+      - path: W_Hat
+        weight: 1
+      - path: W_HatTweak
+        weight: 1
+      - path: W_Jaw
+        weight: 1
+      - path: W_Knee
+        weight: 1
+      - path: W_Lapel
+        weight: 1
+      - path: W_Neck
+        weight: 1
+      - path: W_Rib
+        weight: 1
+      - path: W_Root
+        weight: 1
+      - path: W_Skull
+        weight: 1
+      - path: W_Square
+        weight: 1
+      - path: W_Toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Reaction_01
+      takeName: Reaction_01
+      firstFrame: -3
+      lastFrame: 257
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: A_
+        weight: 1
+      - path: A_/Root
+        weight: 1
+      - path: A_/Root/Elbow_L
+        weight: 1
+      - path: A_/Root/Elbow_R
+        weight: 1
+      - path: A_/Root/HandIK_L
+        weight: 1
+      - path: A_/Root/HandIK_R
+        weight: 1
+      - path: A_/Root/Hips
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_L
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowInner_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowOuter_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowInner_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowOuter_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Back
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Front
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Jaw
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/lapel_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Cuff_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L/Index_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L/Middle_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L/Pinky_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L/Ring_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L/Thumb_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/lapel_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Cuff_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R/Index_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R/Middle_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R/Pinky_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R/Ring_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R/Thumb_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L/Toe_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R/Toe_R
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: Perilous_Cliff
+        weight: 1
+      - path: Pete
+        weight: 1
+      - path: Pete_s_Head
+        weight: 1
+      - path: W_Circle
+        weight: 1
+      - path: W_Clavicle_L
+        weight: 1
+      - path: W_Clavicle_R
+        weight: 1
+      - path: W_Coat_L
+        weight: 1
+      - path: W_Coat_R
+        weight: 1
+      - path: W_Cuffs
+        weight: 1
+      - path: W_EyeControllers
+        weight: 1
+      - path: W_EyeLid
+        weight: 1
+      - path: W_EyeScale
+        weight: 1
+      - path: W_Feet
+        weight: 1
+      - path: W_Finger
+        weight: 1
+      - path: W_Hand
+        weight: 1
+      - path: W_Hat
+        weight: 1
+      - path: W_HatTweak
+        weight: 1
+      - path: W_Jaw
+        weight: 1
+      - path: W_Knee
+        weight: 1
+      - path: W_Lapel
+        weight: 1
+      - path: W_Neck
+        weight: 1
+      - path: W_Rib
+        weight: 1
+      - path: W_Root
+        weight: 1
+      - path: W_Skull
+        weight: 1
+      - path: W_Square
+        weight: 1
+      - path: W_Toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Reaction_02
+      takeName: Reaction_02
+      firstFrame: -2
+      lastFrame: 84
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: A_
+        weight: 1
+      - path: A_/Root
+        weight: 1
+      - path: A_/Root/Elbow_L
+        weight: 1
+      - path: A_/Root/Elbow_R
+        weight: 1
+      - path: A_/Root/HandIK_L
+        weight: 1
+      - path: A_/Root/HandIK_R
+        weight: 1
+      - path: A_/Root/Hips
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_L
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowInner_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowOuter_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowInner_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowOuter_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Back
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Front
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Jaw
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/lapel_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Cuff_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L/Index_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L/Middle_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L/Pinky_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L/Ring_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L/Thumb_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/lapel_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Cuff_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R/Index_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R/Middle_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R/Pinky_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R/Ring_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R/Thumb_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L/Toe_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R/Toe_R
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: Perilous_Cliff
+        weight: 1
+      - path: Pete
+        weight: 1
+      - path: Pete_s_Head
+        weight: 1
+      - path: W_Circle
+        weight: 1
+      - path: W_Clavicle_L
+        weight: 1
+      - path: W_Clavicle_R
+        weight: 1
+      - path: W_Coat_L
+        weight: 1
+      - path: W_Coat_R
+        weight: 1
+      - path: W_Cuffs
+        weight: 1
+      - path: W_EyeControllers
+        weight: 1
+      - path: W_EyeLid
+        weight: 1
+      - path: W_EyeScale
+        weight: 1
+      - path: W_Feet
+        weight: 1
+      - path: W_Finger
+        weight: 1
+      - path: W_Hand
+        weight: 1
+      - path: W_Hat
+        weight: 1
+      - path: W_HatTweak
+        weight: 1
+      - path: W_Jaw
+        weight: 1
+      - path: W_Knee
+        weight: 1
+      - path: W_Lapel
+        weight: 1
+      - path: W_Neck
+        weight: 1
+      - path: W_Rib
+        weight: 1
+      - path: W_Root
+        weight: 1
+      - path: W_Skull
+        weight: 1
+      - path: W_Square
+        weight: 1
+      - path: W_Toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Reaction_03
+      takeName: Reaction_03
+      firstFrame: -1
+      lastFrame: 62
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: A_
+        weight: 1
+      - path: A_/Root
+        weight: 1
+      - path: A_/Root/Elbow_L
+        weight: 1
+      - path: A_/Root/Elbow_R
+        weight: 1
+      - path: A_/Root/HandIK_L
+        weight: 1
+      - path: A_/Root/HandIK_R
+        weight: 1
+      - path: A_/Root/Hips
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_L
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowInner_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowOuter_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowInner_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowOuter_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Back
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Front
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Jaw
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/lapel_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Cuff_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L/Index_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L/Middle_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L/Pinky_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L/Ring_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L/Thumb_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/lapel_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Cuff_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R/Index_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R/Middle_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R/Pinky_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R/Ring_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R/Thumb_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L/Toe_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R/Toe_R
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: Perilous_Cliff
+        weight: 1
+      - path: Pete
+        weight: 1
+      - path: Pete_s_Head
+        weight: 1
+      - path: W_Circle
+        weight: 1
+      - path: W_Clavicle_L
+        weight: 1
+      - path: W_Clavicle_R
+        weight: 1
+      - path: W_Coat_L
+        weight: 1
+      - path: W_Coat_R
+        weight: 1
+      - path: W_Cuffs
+        weight: 1
+      - path: W_EyeControllers
+        weight: 1
+      - path: W_EyeLid
+        weight: 1
+      - path: W_EyeScale
+        weight: 1
+      - path: W_Feet
+        weight: 1
+      - path: W_Finger
+        weight: 1
+      - path: W_Hand
+        weight: 1
+      - path: W_Hat
+        weight: 1
+      - path: W_HatTweak
+        weight: 1
+      - path: W_Jaw
+        weight: 1
+      - path: W_Knee
+        weight: 1
+      - path: W_Lapel
+        weight: 1
+      - path: W_Neck
+        weight: 1
+      - path: W_Rib
+        weight: 1
+      - path: W_Root
+        weight: 1
+      - path: W_Skull
+        weight: 1
+      - path: W_Square
+        weight: 1
+      - path: W_Toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Reaction_04
+      takeName: Reaction_04
+      firstFrame: -2
+      lastFrame: 244
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: A_
+        weight: 1
+      - path: A_/Root
+        weight: 1
+      - path: A_/Root/Elbow_L
+        weight: 1
+      - path: A_/Root/Elbow_R
+        weight: 1
+      - path: A_/Root/HandIK_L
+        weight: 1
+      - path: A_/Root/HandIK_R
+        weight: 1
+      - path: A_/Root/Hips
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_L
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowInner_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowOuter_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowInner_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowOuter_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Back
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Front
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Jaw
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/lapel_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Cuff_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L/Index_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L/Middle_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L/Pinky_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L/Ring_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L/Thumb_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/lapel_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Cuff_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R/Index_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R/Middle_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R/Pinky_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R/Ring_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R/Thumb_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L/Toe_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R/Toe_R
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: Perilous_Cliff
+        weight: 1
+      - path: Pete
+        weight: 1
+      - path: Pete_s_Head
+        weight: 1
+      - path: W_Circle
+        weight: 1
+      - path: W_Clavicle_L
+        weight: 1
+      - path: W_Clavicle_R
+        weight: 1
+      - path: W_Coat_L
+        weight: 1
+      - path: W_Coat_R
+        weight: 1
+      - path: W_Cuffs
+        weight: 1
+      - path: W_EyeControllers
+        weight: 1
+      - path: W_EyeLid
+        weight: 1
+      - path: W_EyeScale
+        weight: 1
+      - path: W_Feet
+        weight: 1
+      - path: W_Finger
+        weight: 1
+      - path: W_Hand
+        weight: 1
+      - path: W_Hat
+        weight: 1
+      - path: W_HatTweak
+        weight: 1
+      - path: W_Jaw
+        weight: 1
+      - path: W_Knee
+        weight: 1
+      - path: W_Lapel
+        weight: 1
+      - path: W_Neck
+        weight: 1
+      - path: W_Rib
+        weight: 1
+      - path: W_Root
+        weight: 1
+      - path: W_Skull
+        weight: 1
+      - path: W_Square
+        weight: 1
+      - path: W_Toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Run
+      firstFrame: -1
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: A_
+        weight: 1
+      - path: A_/Root
+        weight: 1
+      - path: A_/Root/Elbow_L
+        weight: 1
+      - path: A_/Root/Elbow_R
+        weight: 1
+      - path: A_/Root/HandIK_L
+        weight: 1
+      - path: A_/Root/HandIK_R
+        weight: 1
+      - path: A_/Root/Hips
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_L
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowInner_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowOuter_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowInner_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowOuter_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Back
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Front
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Jaw
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/lapel_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Cuff_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L/Index_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L/Middle_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L/Pinky_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L/Ring_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L/Thumb_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/lapel_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Cuff_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R/Index_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R/Middle_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R/Pinky_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R/Ring_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R/Thumb_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L/Toe_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R/Toe_R
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: Perilous_Cliff
+        weight: 1
+      - path: Pete
+        weight: 1
+      - path: Pete_s_Head
+        weight: 1
+      - path: W_Circle
+        weight: 1
+      - path: W_Clavicle_L
+        weight: 1
+      - path: W_Clavicle_R
+        weight: 1
+      - path: W_Coat_L
+        weight: 1
+      - path: W_Coat_R
+        weight: 1
+      - path: W_Cuffs
+        weight: 1
+      - path: W_EyeControllers
+        weight: 1
+      - path: W_EyeLid
+        weight: 1
+      - path: W_EyeScale
+        weight: 1
+      - path: W_Feet
+        weight: 1
+      - path: W_Finger
+        weight: 1
+      - path: W_Hand
+        weight: 1
+      - path: W_Hat
+        weight: 1
+      - path: W_HatTweak
+        weight: 1
+      - path: W_Jaw
+        weight: 1
+      - path: W_Knee
+        weight: 1
+      - path: W_Lapel
+        weight: 1
+      - path: W_Neck
+        weight: 1
+      - path: W_Rib
+        weight: 1
+      - path: W_Root
+        weight: 1
+      - path: W_Skull
+        weight: 1
+      - path: W_Square
+        weight: 1
+      - path: W_Toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sprint
+      takeName: Sprint
+      firstFrame: -1
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: A_
+        weight: 1
+      - path: A_/Root
+        weight: 1
+      - path: A_/Root/Elbow_L
+        weight: 1
+      - path: A_/Root/Elbow_R
+        weight: 1
+      - path: A_/Root/HandIK_L
+        weight: 1
+      - path: A_/Root/HandIK_R
+        weight: 1
+      - path: A_/Root/Hips
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_L
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowInner_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowOuter_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowInner_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowOuter_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Back
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Front
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Jaw
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/lapel_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Cuff_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L/Index_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L/Middle_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L/Pinky_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L/Ring_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L/Thumb_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/lapel_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Cuff_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R/Index_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R/Middle_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R/Pinky_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R/Ring_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R/Thumb_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L/Toe_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R/Toe_R
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: Perilous_Cliff
+        weight: 1
+      - path: Pete
+        weight: 1
+      - path: Pete_s_Head
+        weight: 1
+      - path: W_Circle
+        weight: 1
+      - path: W_Clavicle_L
+        weight: 1
+      - path: W_Clavicle_R
+        weight: 1
+      - path: W_Coat_L
+        weight: 1
+      - path: W_Coat_R
+        weight: 1
+      - path: W_Cuffs
+        weight: 1
+      - path: W_EyeControllers
+        weight: 1
+      - path: W_EyeLid
+        weight: 1
+      - path: W_EyeScale
+        weight: 1
+      - path: W_Feet
+        weight: 1
+      - path: W_Finger
+        weight: 1
+      - path: W_Hand
+        weight: 1
+      - path: W_Hat
+        weight: 1
+      - path: W_HatTweak
+        weight: 1
+      - path: W_Jaw
+        weight: 1
+      - path: W_Knee
+        weight: 1
+      - path: W_Lapel
+        weight: 1
+      - path: W_Neck
+        weight: 1
+      - path: W_Rib
+        weight: 1
+      - path: W_Root
+        weight: 1
+      - path: W_Skull
+        weight: 1
+      - path: W_Square
+        weight: 1
+      - path: W_Toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Swim
+      takeName: Swim
+      firstFrame: -1
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: A_
+        weight: 1
+      - path: A_/Root
+        weight: 1
+      - path: A_/Root/Elbow_L
+        weight: 1
+      - path: A_/Root/Elbow_R
+        weight: 1
+      - path: A_/Root/HandIK_L
+        weight: 1
+      - path: A_/Root/HandIK_R
+        weight: 1
+      - path: A_/Root/Hips
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_L
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowInner_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowOuter_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowInner_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowOuter_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Back
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Front
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Jaw
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/lapel_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Cuff_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L/Index_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L/Middle_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L/Pinky_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L/Ring_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L/Thumb_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/lapel_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Cuff_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R/Index_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R/Middle_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R/Pinky_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R/Ring_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R/Thumb_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L/Toe_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R/Toe_R
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: Perilous_Cliff
+        weight: 1
+      - path: Pete
+        weight: 1
+      - path: Pete_s_Head
+        weight: 1
+      - path: W_Circle
+        weight: 1
+      - path: W_Clavicle_L
+        weight: 1
+      - path: W_Clavicle_R
+        weight: 1
+      - path: W_Coat_L
+        weight: 1
+      - path: W_Coat_R
+        weight: 1
+      - path: W_Cuffs
+        weight: 1
+      - path: W_EyeControllers
+        weight: 1
+      - path: W_EyeLid
+        weight: 1
+      - path: W_EyeScale
+        weight: 1
+      - path: W_Feet
+        weight: 1
+      - path: W_Finger
+        weight: 1
+      - path: W_Hand
+        weight: 1
+      - path: W_Hat
+        weight: 1
+      - path: W_HatTweak
+        weight: 1
+      - path: W_Jaw
+        weight: 1
+      - path: W_Knee
+        weight: 1
+      - path: W_Lapel
+        weight: 1
+      - path: W_Neck
+        weight: 1
+      - path: W_Rib
+        weight: 1
+      - path: W_Root
+        weight: 1
+      - path: W_Skull
+        weight: 1
+      - path: W_Square
+        weight: 1
+      - path: W_Toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: Walk
+      firstFrame: -1
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: A_
+        weight: 1
+      - path: A_/Root
+        weight: 1
+      - path: A_/Root/Elbow_L
+        weight: 1
+      - path: A_/Root/Elbow_R
+        weight: 1
+      - path: A_/Root/HandIK_L
+        weight: 1
+      - path: A_/Root/HandIK_R
+        weight: 1
+      - path: A_/Root/Hips
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_L
+        weight: 1
+      - path: A_/Root/Hips/CoatTail_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowInner_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_L/BrowOuter_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowInner_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Brow_R/BrowOuter_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/EyeScale_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Back
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Hat_0/HatTip_Front
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Jaw
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Lid_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Neck/Head/Mouth_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/lapel_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Cuff_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Index_01_L/Index_02_L/Index_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Middle_01_L/Middle_02_L/Middle_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Pinky_01_L/Pinky_02_L/Pinky_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Ring_01_L/Ring_02_L/Ring_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_L/UpperArm_L/Forearm_L/Hand_L/Thumb_01_L/Thumb_02_L/Thumb_03_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/lapel_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Cuff_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Index_01_R/Index_02_R/Index_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Middle_01_R/Middle_02_R/Middle_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Pinky_01_R/Pinky_02_R/Pinky_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Ring_01_R/Ring_02_R/Ring_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Spine_02/Spine_03/Shoulder_R/UpperArm_R/Forearm_R/Hand_R/Thumb_01_R/Thumb_02_R/Thumb_03_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_L/Shin_L/Foot_L/Toe_L
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R
+        weight: 1
+      - path: A_/Root/Hips/Spine_01/Thigh_R/Shin_R/Foot_R/Toe_R
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: Perilous_Cliff
+        weight: 1
+      - path: Pete
+        weight: 1
+      - path: Pete_s_Head
+        weight: 1
+      - path: W_Circle
+        weight: 1
+      - path: W_Clavicle_L
+        weight: 1
+      - path: W_Clavicle_R
+        weight: 1
+      - path: W_Coat_L
+        weight: 1
+      - path: W_Coat_R
+        weight: 1
+      - path: W_Cuffs
+        weight: 1
+      - path: W_EyeControllers
+        weight: 1
+      - path: W_EyeLid
+        weight: 1
+      - path: W_EyeScale
+        weight: 1
+      - path: W_Feet
+        weight: 1
+      - path: W_Finger
+        weight: 1
+      - path: W_Hand
+        weight: 1
+      - path: W_Hat
+        weight: 1
+      - path: W_HatTweak
+        weight: 1
+      - path: W_Jaw
+        weight: 1
+      - path: W_Knee
+        weight: 1
+      - path: W_Lapel
+        weight: 1
+      - path: W_Neck
+        weight: 1
+      - path: W_Rib
+        weight: 1
+      - path: W_Root
+        weight: 1
+      - path: W_Skull
+        weight: 1
+      - path: W_Square
+        weight: 1
+      - path: W_Toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

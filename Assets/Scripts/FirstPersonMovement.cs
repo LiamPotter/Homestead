@@ -22,6 +22,13 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
     public float movementSpeed;
     public float gravityForce,jumpForce;
     private float vSpeed=0; // current vertical velocity
+    [NetSync]
+    private float currentSpeed;
+
+    [NetSync("PlayCurrentAnimation", NetworkCallers.Everyone)]
+    public int currentClip;
+    public List<AnimationClip> AnimationClips;
+
     public float groundedHeight;
     public bool isJumping,isGrounded;
     public float rotationSpeed;
@@ -29,21 +36,23 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
     private float rotH, rotV,rotF;
     public float cameraMaxAngle, cameraMinAngle;
     public bool invertCamVertical, invertCamHorizontal;
-
+    
     private Vector3 initialCameraRotation;
     private Vector3 MovementVector;
     private Vector3 RotationVector;
     private Vector3 ModelLookVector;
     private CharacterController CharController;
     private Player thisPlayer;
+    private Animator thisAnimator;
     private RaycastHit groundHit;
-	void Awake ()
+    protected void Awake()
     {
-        thisPlayer = ReInput.players.GetPlayer((int)OwnerId+1);
+        thisPlayer = ReInput.players.GetPlayer((int)OwnerId + 1);
         CharController = GetComponent<CharacterController>();
         initialCameraRotation = FirstPersonCamera.rotation.eulerAngles;
+        thisAnimator = CharacterModel.GetComponent<Animator>();
+        currentClip = 0;
     }
-	
 	protected override void UnityUpdate()
     {
         base.UnityUpdate();
@@ -59,9 +68,11 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
             case C_State.Idle:
                 CreateMovementVector();
                 vSpeed = 0;
+                SetClipInteger(0);
                 break;
             case C_State.Moving:
                 CreateMovementVector();
+                SetClipInteger(1);
                 vSpeed = 0;
                 break;
             case C_State.Jumping:
@@ -78,6 +89,8 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
                 break;
         }
         CharController.Move(MovementVector);
+        currentSpeed = Mathf.Abs(CharController.velocity.x) + Mathf.Abs(CharController.velocity.z);
+        thisAnimator.SetFloat("Movement", currentSpeed);
         #region Rotation
         rotV += initialCameraRotation.x + thisPlayer.GetAxis("CamHorizontal");
         if(invertCamVertical)
@@ -87,10 +100,15 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
         rotH = Mathf.Clamp(rotH, cameraMinAngle, cameraMaxAngle);
         RotationVector = new Vector3(rotH* cameraSensitivity, rotV* cameraSensitivity, rotF);
         TriToolHub.SetRotation(FirstPersonCamera.gameObject, RotationVector, Space.Self);
-        ModelLookVector = new Vector3(-90, FirstPersonCamera.localEulerAngles.y, CharacterModel.transform.localRotation.z);
+        ModelLookVector = new Vector3(0, FirstPersonCamera.localEulerAngles.y, CharacterModel.transform.localRotation.z);
         TriToolHub.SetRotation(CharacterModel, ModelLookVector, Space.Self);
         #endregion
     }
+    //protected override void NonOwnerUpdate()
+    //{
+    //    base.NonOwnerUpdate();
+    //    Debug.Log("NON OWNER CLIP " + currentClip);
+    //}
     private C_State CalculateState()
     {
         if (thisPlayer.GetButton("Jump"))
@@ -122,6 +140,32 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
     private void AffectMovementVectorY(float amount)
     {
         MovementVector.y = amount;
+    }
+    public void PlayCurrentAnimation()
+    {
+        thisAnimator.SetInteger("Clip", currentClip);
+    }
+    public void SetClipInteger(int value)
+    {
+        currentClip = value;
+    }
+    public void SetNextClip()
+    {
+        if (currentClip >= AnimationClips.Count - 1)
+        {
+            currentClip = 0;
+            return;
+        }
+        else currentClip++;
+    }
+    public void SetPreviousClip()
+    {
+        if (currentClip <= 0)
+        {
+            currentClip = AnimationClips.Count - 1;
+            return;
+        }
+        else currentClip--;
     }
     protected override void OnApplicationQuit()
     {
