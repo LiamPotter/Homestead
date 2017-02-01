@@ -25,6 +25,7 @@ public class NetworkedPlant : NetworkedMonoBehavior
     public float timeNeededEachStage;
     [NetSync]
     private float currentTimeInStage;
+    public bool DebugDisplay;
     public Text timeDisplay, stageDisplay;
     void Start()
     {
@@ -40,8 +41,16 @@ public class NetworkedPlant : NetworkedMonoBehavior
     protected override void UnityUpdate()
     {
         base.UnityUpdate();
-        timeDisplay.text = timeElapsed.ToString();
-        stageDisplay.text = CurrentGrowthStage.ToString();
+        if (DebugDisplay)
+        {
+            timeDisplay.text = timeElapsed.ToString();
+            stageDisplay.text = CurrentGrowthStage.ToString();
+        }
+        else
+        {
+            timeDisplay.enabled = false;
+            stageDisplay.enabled = false;
+        }
         timeElapsed += Time.deltaTime;
         if (tempStage != CurrentGrowthStage)
         {
