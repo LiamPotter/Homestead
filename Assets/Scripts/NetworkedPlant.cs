@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -45,6 +45,7 @@ public class NetworkedPlant : NetworkedMonoBehavior
         timeElapsed += Time.deltaTime;
         if (tempStage != CurrentGrowthStage)
         {
+		 //do any events in this if
             currentTimeInStage = 0;
             tempStage = CurrentGrowthStage;
         }
