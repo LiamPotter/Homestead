@@ -10,7 +10,7 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
     [Space]
     public Transform FirstPersonCamera;
     public GameObject CharacterModel;
-
+    public InventoryUI invUI;
     public enum C_State
     {
         Idle,
@@ -42,7 +42,7 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
     private Vector3 RotationVector;
     private Vector3 ModelLookVector;
     private CharacterController CharController;
-    private Player thisPlayer;
+    public Player thisPlayer;
     private Animator thisAnimator;
     private RaycastHit groundHit;
     protected void Awake()
@@ -58,7 +58,8 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
         base.UnityUpdate();
         if (!IsOwner)
             return;
-       
+        if (invUI.showingUI)
+            return;
         if (CharController.isGrounded)
             isGrounded = true;
         if (!CharController.isGrounded)
@@ -93,6 +94,7 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
         currentSpeed = Mathf.Abs(CharController.velocity.x) + Mathf.Abs(CharController.velocity.z);
         thisAnimator.SetFloat("Movement", currentSpeed);
         #region Rotation
+     
         rotV += initialCameraRotation.x + thisPlayer.GetAxis("CamHorizontal");
         if(invertCamVertical)
             rotH += initialCameraRotation.y + thisPlayer.GetAxis("CamVertical");
