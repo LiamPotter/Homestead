@@ -15,7 +15,7 @@ public class BaseInventory: MonoBehaviour
         for (int i = 0; i < MaxInventorySpace; i++)
         {
             InventoryDictionary.Add(i,ScriptableObject.CreateInstance<InventorySpace>());
-            Debug.Log("Added " + InventoryDictionary.ElementAt(i));
+            //Debug.Log("Added " + InventoryDictionary.ElementAt(i)+", is free? "+InventoryDictionary.ElementAt(i).Value.SpaceIsFree);
         }
         WantedInventoryItem = ScriptableObject.CreateInstance<InvItem>();
         WantedInventoryItem.Name = "HelloDebugItem";
@@ -43,7 +43,7 @@ public class BaseInventory: MonoBehaviour
             where s.SpaceIsFree == true
             select s;
         if (iSpace != null)
-            return (InventorySpace)iSpace;
+            return iSpace.First();
         else
         {
             Debug.LogError("No Inventory Space!");
@@ -57,11 +57,23 @@ public class BaseInventory: MonoBehaviour
             where s.ContainedItem == toFind
             select s;
         if (iSpace != null)
-            return (InventorySpace)iSpace;
+            return iSpace.First();
         else
         {
             Debug.LogError("The item you are trying to remove is not in the player's inventory!");
             return null;
+        }
+    }
+    public void CheckInventory()
+    {
+        for (int i = 0; i < InventoryDictionary.Keys.Count; i++)
+        {
+            if (InventoryDictionary.ElementAt(i).Value.SpaceIsFree)
+                Debug.Log("Inventory Space "+InventoryDictionary.ElementAt(i).Key + " is empty!");
+            else
+            {
+                Debug.Log("Inventory Space " + InventoryDictionary.ElementAt(i).Key + " currently holds " + InventoryDictionary.ElementAt(i).Value.ContainedItem.Name);
+            }
         }
     }
 }
