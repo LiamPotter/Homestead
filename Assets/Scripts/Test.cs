@@ -5,45 +5,111 @@ using BeardedManStudios.Network;
 public class Test :NetworkedMonoBehavior {
     public LayerMask farmMask;
     public Grid grid;
-
+    bool gridMade = false;
     public GameObject gridIns;
     [NetSync]
     bool testing = false;
+
+    public GameObject reticle;
     // Use this for initialization
  
     //    grid = FindObjectOfType<Grid>();
     void Start()
     {
-       
+
+
+    }
+  
+    private void DrawRayFromCenter()
+    {
+     
+
+    }
+    [BRPC]
+    public void PlantSeed(uint tileNum)
+    {
+
     }
 
+    [BRPC]
+    public void FindNode(Vector3 worldPos, bool planting)
+    {
+        Node nodeToChange = grid.NodeFromWorldPoint(worldPos);
 
+        if (planting)
+            nodeToChange.myTile.RPC("SeedPlanted");
+        else
+            nodeToChange.myTile.TillTile();
+        
 
+       // RPC("AllowChange", nodeToChange, NetworkReceivers.OthersProximity);
+    }
     // Update is called once per frame
     void Update () {
-        //if (!IsOwner)
-        //    return;
-        if (Input.GetMouseButtonDown(0))
+
+        if (Input.GetMouseButtonDown(1))
         {
-            //Debug.Log("Clicking");
-            Ray ray = (Camera.main.ScreenPointToRay(Input.mousePosition));
+            int x = Screen.width / 2;
+            int y = Screen.height / 2;
+            Ray ray = Camera.main.ScreenPointToRay(new Vector3(x, y, 0));
             RaycastHit hit;
+
             if (Physics.Raycast(ray, out hit, 100, farmMask))
             {
-             
+               
+                Vector3 hitpos = hit.point;
+                if (!Networking.PrimarySocket.IsServer)
+                {
+                    RPC("FindNode", NetworkReceivers.Server, hitpos, true);
+                    return;
+                }
+
+                
                 Node nodeToChange = grid.NodeFromWorldPoint(hit.point);
-                Debug.Log("is NodeToChange Null? " + ((nodeToChange==null)?"True":"False"));
-                Debug.Log("myTile Null? " + ((nodeToChange.myTile == null) ? "True" : "False"));
-                nodeToChange.myTile.TillTile();
-               // Debug.Log("ChangingTile");
+
+                if (nodeToChange.myTile.tilled)
+                    nodeToChange.myTile.RPC("SeedPlanted");
+
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && !testing)
+        if (Input.GetMouseButton(0) && testing)
         {
-            Networking.Instantiate("Farm", NetworkReceivers.AllBuffered,  callback: TestingCallBack);
-            
-            testing = true;
+            //Debug.Log("Clicking");
+            int x = Screen.width / 2;
+            int y = Screen.height / 2;
+            Ray ray = Camera.main.ScreenPointToRay(new Vector3(x, y, 0));
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, 100, farmMask))
+            {
+                Vector3 hitpos = hit.point;
+                if (!Networking.PrimarySocket.IsServer)
+                {
+                    RPC("FindNode", NetworkReceivers.Server, hitpos, false );
+                    return;
+                }
+
+                Node nodeToChange = grid.NodeFromWorldPoint(hit.point);
+
+                nodeToChange.myTile.TillTile();
+
+            }
+        }
+
+        if (Input.GetMouseButtonDown(0) && !testing)
+        {
+            int x = Screen.width / 2;
+            int y = Screen.height / 2;
+            Ray ray = Camera.main.ScreenPointToRay(new Vector3(x, y, 0));
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, 100))
+            {
+                Networking.Instantiate("Farm", hit.point + Vector3.up * 1.5f,Quaternion.identity, NetworkReceivers.AllBuffered, callback: TestingCallBack);
+
+                testing = true;
+
+            }
+
         }
         if (!Networking.PrimarySocket.IsServer && grid == null)
         {
@@ -57,7 +123,8 @@ public class Test :NetworkedMonoBehavior {
     {
         
         grid = c.GetComponent<Grid>();
-        grid.Setup(Networking.PrimarySocket, true, 6, 5);
+        grid.gridStartPos = c.transform.position;
+        
     }
 
     [BRPC]

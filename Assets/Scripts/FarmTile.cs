@@ -15,14 +15,27 @@ public class FarmTile : NetworkedMonoBehavior {
 
     public Material[] mats;
 
-
+    public float timer = 2000;
     private MeshRenderer mR;
-	// Use this for initialization
-	void Awake () {
+
+    public bool tilled;
+
+    [NetSync]
+    public bool seedPlanted = false;
+    // Use this for initialization
+    void Awake () {
         //        myNode = null;
         
         mR = GetComponent<MeshRenderer>();
 	}
+
+    [BRPC]
+    public void SeedPlanted()
+    {
+        seedPlanted = true;
+        Debug.Log("You Planted Seed");
+    }
+
 
     // Update is called once per frame
     protected override void UnityUpdate() {
@@ -32,7 +45,22 @@ public class FarmTile : NetworkedMonoBehavior {
             transform.localScale = scale;
         if (mR.material != mats[matIndex])
             mR.material = mats[matIndex];
-     
+        if (transform.position != myNode.worldPos)
+            transform.position = myNode.worldPos;
+
+        timer -= Time.deltaTime;
+
+        if (timer <= 0)
+        {
+            ChangeTile(matIndex - 1);
+            
+            timer = 2;
+        }
+
+        if (matIndex == 2)
+            tilled = true;
+        else
+            tilled = false;
     }
 
     public void TillTile()
@@ -44,24 +72,9 @@ public class FarmTile : NetworkedMonoBehavior {
     [BRPC]
     public void ChangeTile(int index)
     {
-        //Debug.Log("ChangingTile" + index);
+       
         matIndex = index;
-        //switch (matIndex)
-        //{
-        //    case 0:
-        //        mR.material = mats[matIndex];
-        //        break;
-        //    case 1:
-        //        mR.material = mats[matIndex];
-        //        break;
-        //    case 2:
-        //        mR.material = mats[matIndex];
-
-        //        break;
-
-        //    default:
-        //        break;
-        //}
+        matIndex = Mathf.Clamp(matIndex, 0, 2);
     }
     public void SetMyNode(Node node)
     {

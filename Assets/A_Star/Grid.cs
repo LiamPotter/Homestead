@@ -13,6 +13,8 @@ public class Grid : NetworkedMonoBehavior {
     float nodeDiameter;
     int gridSizeX, gridSizeY;
 
+
+    public Vector3 gridStartPos;
     
     void Awake ()
     {
@@ -87,8 +89,12 @@ public class Grid : NetworkedMonoBehavior {
 
         //convert world pos to percentage for x and y coordinate to tell how far along it is
         // for X coordinate on Far left will have a percentage of 0
-        float percentX = (worldPosition.x + gridWorldSize.x / 2) / gridWorldSize.x;
-        float percentY = (worldPosition.z + gridWorldSize.y / 2) / gridWorldSize.y;
+        float percentX =  (worldPosition.x - gridStartPos.x + gridWorldSize.x / 2) / gridWorldSize.x ;
+        float percentY =   (worldPosition.z - gridStartPos.z + gridWorldSize.y / 2) / gridWorldSize.y ;
+
+
+        Debug.Log(percentX);
+        Debug.Log(percentY);
 
         //Clamp to stop errors if it is outside of the grid
         percentX = Mathf.Clamp01(percentX);
@@ -112,9 +118,12 @@ public class Grid : NetworkedMonoBehavior {
                 //same for Y 
                 //this gives each point that a node will occupy in our world
                 Vector3 worldPoint = worldBottomLeft + Vector3.right * (x * nodeDiameter + nodeRadius) + Vector3.forward * (y * nodeDiameter + nodeRadius);
+                worldPoint.x = Mathf.RoundToInt(worldPoint.x);
+                worldPoint.y = Mathf.RoundToInt(worldPoint.y);
+                worldPoint.z = Mathf.RoundToInt(worldPoint.z);
 
                 //Can raycast to find layer, and set the cost higher
-               
+
                 grid[x, y] = new Node(true, worldPoint, x,y, 0);
 
             }

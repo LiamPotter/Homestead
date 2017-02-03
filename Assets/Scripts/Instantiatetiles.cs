@@ -20,31 +20,26 @@ public class Instantiatetiles :  NetworkedMonoBehavior{
     private bool done = false;
     private bool doneCallback;
     // Use this for initialization
-    void Start ()
+    protected void Start()
     {
-     
-            
-
-        //Debug.Log(Networking.PrimarySocket.IsServer + "Is Server?");
         if (!Networking.PrimarySocket.IsServer)
         {
             RPC("GetGridID", NetworkReceivers.Server);
-
-        
             return;
         }
-        
-        psuedoRandom = new System.Random(seed.GetHashCode());
 
+        psuedoRandom = new System.Random(seed.GetHashCode());
         _grid = FindObjectOfType<Test>().grid;
         foreach (Node node in _grid.grid)
         {
-            
+
             positions.Add(node.worldPos);
             nodes.Add(node);
             Networking.Instantiate(tile, NetworkReceivers.AllBuffered, callback: MyCallBack);
         }
     }
+    
+     
 
     [BRPC]
     public void GetGridID()
