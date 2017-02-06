@@ -26,7 +26,6 @@ public class WorldItemEditor : Editor {
         DrawDefaultInspector();
         thisWorldItem.thisItem.Name = nameProp.stringValue;
         thisWorldItem.thisItem.ThisItemType = thisWorldItem.ItemType;
-        thisWorldItem.name = thisWorldItem.itemName;
         if(thisWorldItem.thisItem.ThisItemType== InvItem.IType.Seed)
         {
             thisWorldItem.thisItem.seedProps.Species = EditorGUILayout.TextField("Seed Species", thisWorldItem.thisItem.seedProps.Species);

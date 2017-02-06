@@ -55,15 +55,7 @@ public class NetworkedPlant : NetworkedMonoBehavior
         timeElapsed += Time.deltaTime;
         if (tempStage != CurrentGrowthStage)
         {
-		    //do any events in this if
-            if(CurrentGrowthStage!= GStage.Mature&&CurrentGrowthStage!=GStage.Withering)
-            {
-                //put growing model here
-            }
-            else
-            {
-                //put grown model here
-            }
+		 //do any events in this if
             currentTimeInStage = 0;
             tempStage = CurrentGrowthStage;
         }
