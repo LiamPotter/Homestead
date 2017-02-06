@@ -9,6 +9,7 @@ public class InventoryUI : MonoBehaviour {
 
     
     public bool showingUI;
+    private bool isShowingUI=false;
     public GameObject inventorySpaceUI_Prefab;
     public Image inventoryHolder;
     public PlayerInventory P_Inventory;
@@ -17,11 +18,14 @@ public class InventoryUI : MonoBehaviour {
     private GridLayoutGroup gridLayout;
     private GameObject tempGameObject;
     private Button tempButton;
+    private InventorySpace tempSpace;
+    private InventorySpace currentSelectedSpace;
     [Space]
     [Header("Debug")]
     [Space]
     public bool showDebugControls;
     public Button addItemDebug, removeItemDebug, checkInvDebug;
+    public InfoPanel infoPanel;
     void Start ()
     {
         addItemDebug.onClick.AddListener(() => AddTheItem());
@@ -39,7 +43,7 @@ public class InventoryUI : MonoBehaviour {
         }
         if(showingUI)
         {
-            inventoryHolder.gameObject.SetActive(true);
+            ShowUI();
             if (showDebugControls)
             {
                 addItemDebug.gameObject.SetActive(true);
@@ -52,14 +56,32 @@ public class InventoryUI : MonoBehaviour {
                 removeItemDebug.gameObject.SetActive(false);
                 checkInvDebug.gameObject.SetActive(false);
             }
+            UpdateInfoPanel(currentSelectedSpace);
         }
         else
         {
+            HideUI();
             inventoryHolder.gameObject.SetActive(false);
             addItemDebug.gameObject.SetActive(false);
             removeItemDebug.gameObject.SetActive(false);
-            checkInvDebug.gameObject.SetActive(false);
         }
+    }
+    void ShowUI()
+    {
+        if(!isShowingUI)
+        {
+            inventoryHolder.gameObject.SetActive(true);
+            currentSelectedSpace = P_Inventory.InventoryDictionary[0];
+            isShowingUI = true;
+        }
+    }
+    void HideUI()
+    {
+        if(isShowingUI)
+        {
+            inventoryHolder.gameObject.SetActive(false);
+            isShowingUI = false;
+        }   
     }
     void AddTheItem()
     {
@@ -79,6 +101,7 @@ public class InventoryUI : MonoBehaviour {
             tempGameObject.transform.localScale = Vector3.one;
             tempButton = tempGameObject.GetComponent<Button>();
             P_Inventory.InventoryDictionary.ElementAt(i).Value.spaceUI = tempButton;
+
         }
     
     }
@@ -98,5 +121,23 @@ public class InventoryUI : MonoBehaviour {
     {
         toChange.GetComponentInChildren<Text>().text = itemName;
         toChange.GetComponentInChildren<Text>().fontStyle = FontStyle.Normal;
+    }
+    private void UpdateInfoPanel(InventorySpace getInfoFrom)
+    {
+        if (getInfoFrom.ContainedItem)
+        {
+            infoPanel.itemName.text = getInfoFrom.ContainedItem.Name;
+            infoPanel.itemType.text = getInfoFrom.ContainedItem.ThisItemType.ToString();
+        }
+        else
+        {
+            infoPanel.itemName.text = "";
+            infoPanel.itemType.text = "";
+        }
+    }
+    public void ChangeSelectedSpace(InventorySpace theSpace)
+    {
+        currentSelectedSpace = theSpace;
+        Debug.Log(theSpace.ContainedItem.Name);
     }
 }

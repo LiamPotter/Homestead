@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using BeardedManStudios.Network;
+using UnityEngine.UI;
 using TriTools;
 using Rewired;
 
@@ -10,6 +11,7 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
     [Space]
     public Transform FirstPersonCamera;
     public GameObject CharacterModel;
+    public PlayerInventory playerInv;
     public InventoryUI invUI;
     public enum C_State
     {
@@ -46,8 +48,11 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
     private Animator thisAnimator;
     private RaycastHit groundHit;
 
-    private RaycastHit centerScreen;
+    private RaycastHit farmHit;
     public LayerMask farmMask;
+    private RaycastHit itemHit;
+    public LayerMask itemMask;
+    public Text interactionButtonUI, interactionNameUI;
     [NetSync]
     public bool farmCreated;
 
@@ -68,26 +73,39 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
         int y = Screen.height / 2;
         Ray ray = Camera.main.ScreenPointToRay(new Vector3(x, y, 0));
 
-        
-        if (Physics.Raycast(ray, out centerScreen, 20, farmMask))
+        if (Physics.Raycast(ray, out itemHit, 5, itemMask))
+        {
+            itemHit.collider.gameObject.GetComponent<WorldItem>().AddItemToInventory(playerInv);
+        }
+        if (Physics.Raycast(ray, out farmHit, 20, farmMask))
         {
             //Do stuff
             if(FindObjectOfType<Grid>().gridCreated)
             {
                 if (plantingSeed)
                 {
-                    if (FindObjectOfType<Test>().CheckPlantable(centerScreen.point))
+                    if (FindObjectOfType<Test>().CheckPlantable(farmHit.point))
                     {
-                        FindObjectOfType<Test>().PlantShit(centerScreen.point);
+                        FindObjectOfType<Test>().PlantShit(farmHit.point);
                     }
                 }
                 else
-                    FindObjectOfType<Test>().ChangeShit(centerScreen.point);
+                    FindObjectOfType<Test>().ChangeShit(farmHit.point);
             }
-     
-
         }
 
+    }
+    private bool ItemCheckRay()
+    {
+        int x = Screen.width / 2;
+        int y = Screen.height / 2;
+        Ray ray = Camera.main.ScreenPointToRay(new Vector3(x, y, 0));
+
+        if (Physics.Raycast(ray, out itemHit, 2, itemMask))
+        {
+            return true;
+        }
+        return false;
     }
     protected override void UnityUpdate()
     {
@@ -142,18 +160,24 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
         ModelLookVector = new Vector3(0, FirstPersonCamera.localEulerAngles.y, CharacterModel.transform.localRotation.z);
         TriToolHub.SetRotation(CharacterModel, ModelLookVector, Space.Self);
         #endregion
-
+        if (ItemCheckRay())
+        {
+            DisplayInteractUI((itemHit.collider.gameObject.GetComponent<WorldItem>())?"Pick Up":"Other");
+            if (thisPlayer.GetButtonDown("Interact"))
+            {
+                itemHit.collider.gameObject.GetComponent<WorldItem>().AddItemToInventory(playerInv);
+            }
+        }
+        else HideInteractUI();
         if (Input.GetMouseButton(0))
         {
             if (Networking.PrimarySocket.IsServer && FindObjectOfType<Grid>() == null)
             {
-                FindObjectOfType<Test>().InstantiateFarm(centerScreen.point);
+                FindObjectOfType<Test>().InstantiateFarm(farmHit.point);
              
             }
             else 
                RaycastFromCenterScreen(false);
-
-            
         }
     }
    
@@ -219,6 +243,18 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
             return;
         }
         else currentClip--;
+    }
+    private void DisplayInteractUI(string interaction)
+    {
+        interactionButtonUI.enabled = true;
+        interactionNameUI.enabled = true;
+        interactionButtonUI.text = (thisPlayer.controllers.joystickCount > 0) ? "A"+")" : "E"+")";
+        interactionNameUI.text = interaction;
+    }
+    private void HideInteractUI()
+    {
+        interactionButtonUI.enabled = false;
+        interactionNameUI.enabled = false;
     }
     protected override void OnApplicationQuit()
     {

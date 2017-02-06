@@ -7,14 +7,13 @@ using UnityEditor;
 [CanEditMultipleObjects]
 public class WorldItemEditor : Editor {
 
-    SerializedProperty nameProp;
+
     private WorldItem thisWorldItem;
     void OnEnable()
     {
         if (!thisWorldItem)
             thisWorldItem = (WorldItem)target;
-        nameProp = serializedObject.FindProperty("itemName");
-        if(thisWorldItem.thisItem == null)
+        if (thisWorldItem.thisItem == null)
         {
             thisWorldItem.InitializeInvItem();
         }
@@ -23,12 +22,17 @@ public class WorldItemEditor : Editor {
     public override void OnInspectorGUI()
     {
         serializedObject.Update();
-        DrawDefaultInspector();
-        thisWorldItem.thisItem.Name = nameProp.stringValue;
-        thisWorldItem.thisItem.ThisItemType = thisWorldItem.ItemType;
-        if(thisWorldItem.thisItem.ThisItemType== InvItem.IType.Seed)
+        if (GUILayout.Button("Recreate InvItem"))
         {
-            thisWorldItem.thisItem.seedProps.Species = EditorGUILayout.TextField("Seed Species", thisWorldItem.thisItem.seedProps.Species);
+            thisWorldItem.InitializeInvItem();
+        }
+        DrawDefaultInspector();
+        thisWorldItem.thisItem.Name = thisWorldItem.ItemName;
+        thisWorldItem.thisItem.ThisItemType = thisWorldItem.ItemType;
+        thisWorldItem.name = thisWorldItem.ItemName;
+        if (thisWorldItem.thisItem.ThisItemType== InvItem.IType.Seed)
+        {
+            thisWorldItem.seedSpecies= EditorGUILayout.TextField("Seed Species", thisWorldItem.seedSpecies);
             thisWorldItem.thisItem.seedProps.growingModel = EditorGUILayout.ObjectField("Growing Model", thisWorldItem.thisItem.seedProps.growingModel, typeof(GameObject), false) as GameObject;
             thisWorldItem.thisItem.seedProps.grownModel = EditorGUILayout.ObjectField("Grown Model", thisWorldItem.thisItem.seedProps.grownModel, typeof(GameObject), false) as GameObject;
         }

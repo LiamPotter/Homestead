@@ -31,6 +31,7 @@ public class PlayerInventory : BaseInventory
     void CreateUI()
     {
         invUI.CreateInventoryUI();
+        Debug.Log("Creating UI");
     }
     void AddedItemUIUpdate()
     {

@@ -26,6 +26,7 @@ public class BaseInventory: MonoBehaviour
         }
         WantedInventoryItem = ScriptableObject.CreateInstance<InvItem>();
         WantedInventoryItem.Name = "Debug Item";
+        WantedInventoryItem.ThisItemType = InvItem.IType.Seed;
     }
 
 
