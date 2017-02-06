@@ -80,18 +80,9 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
         if (Physics.Raycast(ray, out farmHit, 20, farmMask))
         {
             //Do stuff
-            if(FindObjectOfType<Grid>().gridCreated)
-            {
-                if (plantingSeed)
-                {
-                    if (FindObjectOfType<Test>().CheckPlantable(farmHit.point))
-                    {
-                        FindObjectOfType<Test>().PlantShit(farmHit.point);
-                    }
-                }
-                else
-                    FindObjectOfType<Test>().ChangeShit(farmHit.point);
-            }
+           FindObjectOfType<Test>().PlantShit(farmHit.point);
+           FindObjectOfType<Test>().ChangeShit(farmHit.point);
+            
         }
 
     }
