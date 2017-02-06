@@ -58,7 +58,7 @@ public class Instantiatetiles :  NetworkedMonoBehavior{
     {
         GameObject tile = obj.gameObject;
         //tile.transform.localScale = Vector3.one *( _grid.nodeRadius * 0.2f);
-    
+        tile.transform.parent = transform;
         FarmTile thisFTIle = tile.GetComponent<FarmTile>();
         thisFTIle.scale = Vector3.one * (_grid.nodeRadius * 0.2f);
 

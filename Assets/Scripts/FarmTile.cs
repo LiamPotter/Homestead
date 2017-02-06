@@ -22,6 +22,12 @@ public class FarmTile : NetworkedMonoBehavior {
 
     [NetSync]
     public bool seedPlanted = false;
+
+    public string[] seeds;
+
+    public GameObject seedPlace;
+
+    private GameObject myCurrentSeed;
     // Use this for initialization
     void Awake () {
         //        myNode = null;
@@ -30,12 +36,30 @@ public class FarmTile : NetworkedMonoBehavior {
 	}
 
     [BRPC]
-    public void SeedPlanted()
+    public void SeedPlanted(int seedIndex)
     {
-        seedPlanted = true;
-        Debug.Log("You Planted Seed");
+        if (tilled)
+        {
+            if (!seedPlanted)
+            {
+                seedPlanted = true;
+                Networking.Instantiate(seeds[seedIndex], seedPlace.transform.position, Quaternion.identity, NetworkReceivers.AllBuffered, callback: PlantedSeed);
+            }
+            else
+                Debug.Log("You Have Alread Planted A Seed Silly");
+        }
+        else
+            Debug.Log("You Have To Till The Dirt Silly");
+
+
+
     }
 
+    public void PlantedSeed(SimpleNetworkedMonoBehavior c)
+    {
+        Debug.Log("You Planted" + c.name + " Seed");
+        myCurrentSeed = c.gameObject;
+    }
 
     // Update is called once per frame
     protected override void UnityUpdate() {

@@ -11,9 +11,7 @@ public class Test :NetworkedMonoBehavior {
     bool testing = false;
 
     public GameObject reticle;
-    // Use this for initialization
- 
-    //    grid = FindObjectOfType<Grid>();
+    private bool x = false;
     void Start()
     {
 
@@ -25,40 +23,53 @@ public class Test :NetworkedMonoBehavior {
      
 
     }
-    [BRPC]
-    public void PlantSeed(uint tileNum)
-    {
-
-    }
+ 
 
     [BRPC]
     public void FindNode(Vector3 worldPos, bool planting)
     {
 
         Node nodeToChange = grid.NodeFromWorldPoint(worldPos);
-        Debug.Log(nodeToChange);
+
         if (planting)
-            nodeToChange.myTile.RPC("SeedPlanted");
+            nodeToChange.myTile.RPC("SeedPlanted", NetworkReceivers.AllBuffered, 0);
         else
             nodeToChange.myTile.TillTile();
         
 
        // RPC("AllowChange", nodeToChange, NetworkReceivers.OthersProximity);
     }
-    public bool CheckPlantable(Vector3 hitPoint)
+    [BRPC]
+    private void ClientCheckPlanting(Vector3 worldPos)
     {
-        Node nodeToChange = grid.NodeFromWorldPoint(hitPoint);
-
+        Node nodeToChange = grid.NodeFromWorldPoint(worldPos);
         if (nodeToChange.myTile.tilled)
-            return true;
+        {
+            x = true;
+        }
         else
-            return false;
+        {
+            x = false;
+        }
+    }
+    public void CheckPlantable(Vector3 hitPoint)
+    {
+        if (!Networking.PrimarySocket.IsServer)
+        {
+           RPC("ClientCheckPlanting", NetworkReceivers.Server, hitPoint);
+           
+        }
+        else
+        {
+            Node nodeToChange = grid.NodeFromWorldPoint(hitPoint);
+
+  
+        }
+     
     }
     
     public void ChangeShit(Vector3 hitPoint)
     {
-        
-
         Vector3 hitpos = hitPoint;
         if (!Networking.PrimarySocket.IsServer)
         {
@@ -84,7 +95,8 @@ public class Test :NetworkedMonoBehavior {
         Node nodeToChange = grid.NodeFromWorldPoint(hitPoint);
 
         if (nodeToChange.myTile.tilled)
-            nodeToChange.myTile.RPC("SeedPlanted");
+            nodeToChange.myTile.RPC("SeedPlanted", NetworkReceivers.AllBuffered, 0);
+
     }
 
 
@@ -94,10 +106,7 @@ public class Test :NetworkedMonoBehavior {
 
     }
     // Update is called once per frame
-    void Update () {
-
-  
-    }
+ 
     [BRPC]
     void SetClientGrids(ulong id)
     {
@@ -109,8 +118,8 @@ public class Test :NetworkedMonoBehavior {
 
         grid = c.GetComponent<Grid>();
         grid.gridStartPos = c.transform.position;
-        RPC("SetClientGrids", NetworkReceivers.OthersBuffered, grid.NetworkedId);
-        Debug.Log(grid.NetworkedId);
+        RPC("SetClientGrids", NetworkReceivers.AllBuffered, grid.NetworkedId);
+
     }
 
 

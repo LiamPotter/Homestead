@@ -94,9 +94,6 @@ public class Grid : NetworkedMonoBehavior {
         float percentY =   (worldPosition.z - gridStartPos.z + gridWorldSize.y / 2) / gridWorldSize.y ;
 
 
-        Debug.Log(percentX);
-        Debug.Log(percentY);
-
         //Clamp to stop errors if it is outside of the grid
         percentX = Mathf.Clamp01(percentX);
         percentY = Mathf.Clamp01(percentY);
