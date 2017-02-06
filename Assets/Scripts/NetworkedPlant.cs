@@ -27,6 +27,7 @@ public class NetworkedPlant : NetworkedMonoBehavior
     private float currentTimeInStage;
     public bool DebugDisplay;
     public Text timeDisplay, stageDisplay;
+    public SeedProperties seedProps;
     void Start()
     {
         if (IsServerOwner)
