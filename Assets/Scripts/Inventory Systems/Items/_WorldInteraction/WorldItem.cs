@@ -17,9 +17,13 @@ public class WorldItem : MonoBehaviour {
         thePlayerInv.AddItem(thisItem);
         gameObject.SetActive(false);
         transform.parent = thePlayerInv.transform;
+        GetComponent<Collider>().enabled = false;
+        GetComponent<Renderer>().enabled = false;
     }
+        
     public void InitializeInvItem()
     {
+        tag = "Item";
         thisItem = ScriptableObject.CreateInstance<InvItem>();
         if (itemName.Length>0)
             thisItem.Name = itemName;
