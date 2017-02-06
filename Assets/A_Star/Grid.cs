@@ -13,7 +13,8 @@ public class Grid : NetworkedMonoBehavior {
     float nodeDiameter;
     int gridSizeX, gridSizeY;
 
-
+    [NetSync]
+    public bool gridCreated;
     public Vector3 gridStartPos;
     
     void Awake ()
@@ -23,7 +24,7 @@ public class Grid : NetworkedMonoBehavior {
         gridSizeY = Mathf.RoundToInt(gridWorldSize.y / nodeDiameter);
         
         CreateGrid();
-        
+        gridCreated = true;
     }
   
   

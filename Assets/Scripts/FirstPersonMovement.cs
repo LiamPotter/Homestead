@@ -45,6 +45,14 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
     public Player thisPlayer;
     private Animator thisAnimator;
     private RaycastHit groundHit;
+
+    private RaycastHit centerScreen;
+    public LayerMask farmMask;
+    [NetSync]
+    public bool farmCreated;
+
+    [NetSync]
+    public int x = 0;
     protected void Awake()
     {
         thisPlayer = ReInput.players.GetPlayer((int)OwnerId + 1);
@@ -53,7 +61,35 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
         thisAnimator = CharacterModel.GetComponent<Animator>();
         currentClip = 0;
     }
-	protected override void UnityUpdate()
+
+    private void RaycastFromCenterScreen(bool plantingSeed)
+    {
+        int x = Screen.width / 2;
+        int y = Screen.height / 2;
+        Ray ray = Camera.main.ScreenPointToRay(new Vector3(x, y, 0));
+
+        
+        if (Physics.Raycast(ray, out centerScreen, 20, farmMask))
+        {
+            //Do stuff
+            if(FindObjectOfType<Grid>().gridCreated)
+            {
+                if (plantingSeed)
+                {
+                    if (FindObjectOfType<Test>().CheckPlantable(centerScreen.point))
+                    {
+                        FindObjectOfType<Test>().PlantShit(centerScreen.point);
+                    }
+                }
+                else
+                    FindObjectOfType<Test>().ChangeShit(centerScreen.point);
+            }
+     
+
+        }
+
+    }
+    protected override void UnityUpdate()
     {
         base.UnityUpdate();
         if (!IsOwner)
@@ -106,6 +142,19 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
         ModelLookVector = new Vector3(0, FirstPersonCamera.localEulerAngles.y, CharacterModel.transform.localRotation.z);
         TriToolHub.SetRotation(CharacterModel, ModelLookVector, Space.Self);
         #endregion
+
+        if (Input.GetMouseButton(0))
+        {
+            if (Networking.PrimarySocket.IsServer && FindObjectOfType<Grid>() == null)
+            {
+                FindObjectOfType<Test>().InstantiateFarm(centerScreen.point);
+             
+            }
+            else 
+               RaycastFromCenterScreen(false);
+
+            
+        }
     }
    
     //protected override void NonOwnerUpdate()
