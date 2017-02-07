@@ -21,7 +21,7 @@ public class WorldItem : MonoBehaviour {
     }
     public void AddItemToInventory(PlayerInventory thePlayerInv)
     {
-        thePlayerInv.AddItem(thisItem);
+        thePlayerInv.AddToPlayerInventory(thisItem);
         gameObject.SetActive(false);
         transform.parent = thePlayerInv.transform;
     }

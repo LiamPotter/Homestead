@@ -9,6 +9,7 @@ public class InventorySpace : ScriptableObject
     public InvItem ContainedItem;
     public Button spaceUI;
     public int position;
+    public bool IsHotBarSpace;
     public void AddedItem(InvItem item)
     {
         ContainedItem = item;

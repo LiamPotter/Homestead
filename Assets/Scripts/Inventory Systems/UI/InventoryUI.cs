@@ -16,9 +16,11 @@ public class InventoryUI : MonoBehaviour {
     public FirstPersonMovement playerMovement;  
     private InvItem tempItem;
     private GridLayoutGroup gridLayout;
+    public GridLayoutGroup hotbarLayout;
     private GameObject tempGameObject;
     //private Button tempButton;
     private List<Button> invButtons = new List<Button>();
+    private List<Button> hotbarButtons = new List<Button>();
     private InventorySpace tempSpace;
     private InventorySpace currentSelectedSpace;
     [Space]
@@ -29,8 +31,8 @@ public class InventoryUI : MonoBehaviour {
     public InfoPanel infoPanel;
     void Start ()
     {
-        addItemDebug.onClick.AddListener(() => AddTheItem());
-        removeItemDebug.onClick.AddListener(() => RemoveTheItem());
+        //addItemDebug.onClick.AddListener(() => AddTheItem());
+        //removeItemDebug.onClick.AddListener(() => RemoveTheItem());
         gridLayout = inventoryHolder.GetComponentInChildren<GridLayoutGroup>();
     }
     void Update()
@@ -84,14 +86,14 @@ public class InventoryUI : MonoBehaviour {
             isShowingUI = false;
         }   
     }
-    void AddTheItem()
-    {
-        P_Inventory.AddItem(tempItem);
-    }
-    void RemoveTheItem()
-    {
-        P_Inventory.RemoveItem(tempItem);
-    }
+    //void AddTheItem()
+    //{
+    //    P_Inventory.AddItem(tempItem);
+    //}
+    //void RemoveTheItem()
+    //{
+    //    P_Inventory.RemoveItem(tempItem);
+    //}
     public void CreateInventoryUI()
     {
         if(!gridLayout)
@@ -106,16 +108,27 @@ public class InventoryUI : MonoBehaviour {
         }
         foreach (Button b in invButtons)
         {
-            b.onClick.AddListener(delegate { ChangeSelectedSpace(b); });
+            b.onClick.AddListener(delegate { ChangeSelectedSpace(b,P_Inventory.InventoryDictionary); });
         }
-    
+        for (int i = 0; i < P_Inventory.HotbarDictionary.Count; i++)
+        {
+            tempGameObject = Instantiate(inventorySpaceUI_Prefab, hotbarLayout.transform) as GameObject;
+            tempGameObject.transform.localScale = Vector3.one;
+            hotbarButtons.Add(tempGameObject.GetComponent<Button>());
+            hotbarButtons[i].name = "HotbarButton" + i;
+            P_Inventory.HotbarDictionary.ElementAt(i).Value.spaceUI = hotbarButtons[i];
+        }
+        foreach (Button b in hotbarButtons)
+        {
+            b.onClick.AddListener(delegate { ChangeSelectedSpace(b,P_Inventory.HotbarDictionary); });
+        }
     }
-    public void UpdateSpaceUI(int key, string itemName,bool remove)
+    public void UpdateSpaceUI(int key,Dictionary<int,InventorySpace> suppliedDictionary, string itemName,bool remove)
     {
         if (remove)
-            ResetUI(P_Inventory.InventoryDictionary.ElementAt(key).Value.spaceUI);
+            ResetUI(suppliedDictionary.ElementAt(key).Value.spaceUI);
         else
-            ChangeUI(P_Inventory.InventoryDictionary.ElementAt(key).Value.spaceUI,itemName);
+            ChangeUI(suppliedDictionary.ElementAt(key).Value.spaceUI,itemName);
     }
     private void ResetUI(Button toChange)
     {
@@ -140,19 +153,19 @@ public class InventoryUI : MonoBehaviour {
             infoPanel.itemType.text = "";
         }
     }
-    public void ChangeSelectedSpace(Button pressed)
+    public void ChangeSelectedSpace(Button pressed,Dictionary<int, InventorySpace> suppliedDictionary)
     {
         Debug.Log("Buttons is "+pressed.name);
         var toFind =
-            from s in P_Inventory.InventoryDictionary.Values
+            from s in suppliedDictionary.Values
             where s.spaceUI == pressed
             select s;
         currentSelectedSpace = (InventorySpace)toFind.First();
     }
     void Destroy()
     {
-        addItemDebug.onClick.RemoveListener(() => AddTheItem());
-        removeItemDebug.onClick.RemoveListener(() => RemoveTheItem());
+        //addItemDebug.onClick.RemoveListener(() => AddTheItem());
+        //removeItemDebug.onClick.RemoveListener(() => RemoveTheItem());
         for (int i = 0; i < invButtons.Count; i++)
         {
             invButtons[i].onClick.RemoveAllListeners();

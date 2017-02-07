@@ -12,15 +12,16 @@ public class BaseInventory: MonoBehaviour
     [HideInInspector]
     public InventorySpace tempFindSpace;
     public InvItem WantedInventoryItem;
-    public delegate void InvDelegate();
+    public delegate void InvDelegate(Dictionary<int,InventorySpace> iSpaceDic);
     public event InvDelegate AddedItemEvent;
     public event InvDelegate RemovedItemEvent;
 
-    void Start()
+  
+    public void InitializeInventory()
     {
         for (int i = 0; i < MaxInventorySpace; i++)
         {
-            InventoryDictionary.Add(i,ScriptableObject.CreateInstance<InventorySpace>());
+            InventoryDictionary.Add(i, ScriptableObject.CreateInstance<InventorySpace>());
             InventoryDictionary.ElementAt(i).Value.position = i;
             //Debug.Log("Added " + InventoryDictionary.ElementAt(i)+", is free? "+InventoryDictionary.ElementAt(i).Value.SpaceIsFree);
         }
@@ -29,28 +30,26 @@ public class BaseInventory: MonoBehaviour
         WantedInventoryItem.ThisItemType = InvItem.IType.Seed;
     }
 
-
-    public void AddItem(InvItem toAdd)
+    protected void AddItem(InvItem toAdd,InventorySpace space,Dictionary<int,InventorySpace> suppliedDictionary)
     {
-        tempFindSpace = FindFreeSpace(InventoryDictionary);
         if (tempFindSpace != null)
         {
             tempFindSpace.AddedItem(toAdd);
-            AddedItemEvent.Invoke();
+            AddedItemEvent.Invoke(suppliedDictionary);
         }
         tempFindSpace = null;
     }
-    public void RemoveItem(InvItem toRemove)
+    protected void RemoveItem(InvItem toRemove, Dictionary<int, InventorySpace> suppliedDictionary)
     {
         tempFindSpace = FindItemToRemove(InventoryDictionary, toRemove);
         if (tempFindSpace != null)
         {
-            RemovedItemEvent.Invoke();
+            RemovedItemEvent.Invoke(suppliedDictionary);
             tempFindSpace.RemovedItem();
         }
         tempFindSpace = null;
     }
-    InventorySpace FindFreeSpace(Dictionary<int,InventorySpace> dictionary)
+    protected InventorySpace FindFreeSpace(Dictionary<int,InventorySpace> dictionary)
     {
         var iSpace =
             from s in dictionary.Values
@@ -64,7 +63,7 @@ public class BaseInventory: MonoBehaviour
             return null;
         }
     }
-    InventorySpace FindItemToRemove(Dictionary<int,InventorySpace> dictionary,InvItem toFind)
+    protected InventorySpace FindItemToRemove(Dictionary<int,InventorySpace> dictionary,InvItem toFind)
     {
         var iSpace =
             from s in dictionary.Values
