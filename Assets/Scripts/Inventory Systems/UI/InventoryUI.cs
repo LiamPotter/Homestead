@@ -17,7 +17,8 @@ public class InventoryUI : MonoBehaviour {
     private InvItem tempItem;
     private GridLayoutGroup gridLayout;
     private GameObject tempGameObject;
-    private Button tempButton;
+    //private Button tempButton;
+    private List<Button> invButtons = new List<Button>();
     private InventorySpace tempSpace;
     private InventorySpace currentSelectedSpace;
     [Space]
@@ -99,9 +100,13 @@ public class InventoryUI : MonoBehaviour {
         {
             tempGameObject = Instantiate(inventorySpaceUI_Prefab, gridLayout.transform) as GameObject;
             tempGameObject.transform.localScale = Vector3.one;
-            tempButton = tempGameObject.GetComponent<Button>();
-            P_Inventory.InventoryDictionary.ElementAt(i).Value.spaceUI = tempButton;
-
+            invButtons.Add(tempGameObject.GetComponent<Button>());
+            invButtons[i].name = "InvButton" + i;
+            P_Inventory.InventoryDictionary.ElementAt(i).Value.spaceUI = invButtons[i];
+        }
+        foreach (Button b in invButtons)
+        {
+            b.onClick.AddListener(delegate { ChangeSelectedSpace(b); });
         }
     
     }
@@ -135,9 +140,22 @@ public class InventoryUI : MonoBehaviour {
             infoPanel.itemType.text = "";
         }
     }
-    public void ChangeSelectedSpace(InventorySpace theSpace)
+    public void ChangeSelectedSpace(Button pressed)
     {
-        currentSelectedSpace = theSpace;
-        Debug.Log(theSpace.ContainedItem.Name);
+        Debug.Log("Buttons is "+pressed.name);
+        var toFind =
+            from s in P_Inventory.InventoryDictionary.Values
+            where s.spaceUI == pressed
+            select s;
+        currentSelectedSpace = (InventorySpace)toFind.First();
+    }
+    void Destroy()
+    {
+        addItemDebug.onClick.RemoveListener(() => AddTheItem());
+        removeItemDebug.onClick.RemoveListener(() => RemoveTheItem());
+        for (int i = 0; i < invButtons.Count; i++)
+        {
+            invButtons[i].onClick.RemoveAllListeners();
+        }
     }
 }

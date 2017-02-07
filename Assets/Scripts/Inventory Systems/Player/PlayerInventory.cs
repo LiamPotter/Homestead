@@ -6,6 +6,7 @@ public class PlayerInventory : BaseInventory
 {
     public InventoryUI invUI;
     private bool doneUICreation=false;
+
     void Awake()
     {
         AddedItemEvent += AddedItemUIUpdate;
