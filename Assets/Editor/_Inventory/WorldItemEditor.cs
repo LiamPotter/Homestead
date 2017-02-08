@@ -37,7 +37,8 @@ public class WorldItemEditor : Editor {
             thisWorldItem.thisItem.seedProps.grownModel = EditorGUILayout.ObjectField("Grown Model", thisWorldItem.thisItem.seedProps.grownModel, typeof(GameObject), false) as GameObject;
         }
         serializedObject.ApplyModifiedProperties();
-    }
     
+    }
+ 
 	
 }

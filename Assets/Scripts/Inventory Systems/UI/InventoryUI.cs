@@ -1,16 +1,20 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventoryUI : MonoBehaviour {
+public class InventoryUI : MonoBehaviour,IEventSystemHandler {
 
     
     public bool showingUI;
     private bool isShowingUI=false;
     public GameObject inventorySpaceUI_Prefab;
+    public Camera GUIcam;
+    public EventSystem GUIEventSystem;
+    public LayerMask UILayer;
     public Image inventoryHolder;
     public PlayerInventory P_Inventory;
     public FirstPersonMovement playerMovement;  
@@ -24,16 +28,20 @@ public class InventoryUI : MonoBehaviour {
     private InventorySpace tempSpace;
     private InventorySpace currentSelectedSpace;
     public Color ItemInSpaceColor, EmptySpaceColor, SelectedSpaceColor;
+    private Ray guiRay;
+    public InfoPanel infoPanel;
+    public PointerEventData pointerED;
     [Space]
     [Header("Debug")]
     [Space]
     public bool showDebugControls;
     public Button addItemDebug, removeItemDebug, checkInvDebug;
-    public InfoPanel infoPanel;
+  
     void Start ()
     {
         //addItemDebug.onClick.AddListener(() => AddTheItem());
         //removeItemDebug.onClick.AddListener(() => RemoveTheItem());
+        pointerED = new PointerEventData(GUIEventSystem);
         gridLayout = inventoryHolder.GetComponentInChildren<GridLayoutGroup>();
     }
     void Update()
@@ -60,7 +68,7 @@ public class InventoryUI : MonoBehaviour {
                 removeItemDebug.gameObject.SetActive(false);
                 checkInvDebug.gameObject.SetActive(false);
             }
-            
+            DetectDrag(currentSelectedSpace.spaceUI);
             UpdateInfoPanel(currentSelectedSpace);
             UpdateSpaceColors(P_Inventory.InventoryDictionary);
             UpdateSpaceColors(P_Inventory.HotbarDictionary);
@@ -113,8 +121,8 @@ public class InventoryUI : MonoBehaviour {
         {
             tempGameObject = Instantiate(inventorySpaceUI_Prefab, gridLayout.transform) as GameObject;
             tempGameObject.transform.localScale = Vector3.one;
-            tempGameObject.transform.localPosition = new Vector3(tempGameObject.transform.localPosition.x, tempGameObject.transform.localPosition.y,0);
-            tempGameObject.transform.localRotation = Quaternion.identity;
+            tempGameObject.transform.localPosition= new Vector3(tempGameObject.transform.localPosition.x, tempGameObject.transform.localPosition.y, gridLayout.transform.localPosition.z);
+            tempGameObject.transform.rotation = gridLayout.transform.rotation;
             invButtons.Add(tempGameObject.GetComponent<Button>());
             invButtons[i].name = "InvButton" + i;
             P_Inventory.InventoryDictionary.ElementAt(i).Value.spaceUI = invButtons[i];
@@ -128,7 +136,8 @@ public class InventoryUI : MonoBehaviour {
         {
             tempGameObject = Instantiate(inventorySpaceUI_Prefab, hotbarLayout.transform) as GameObject;
             tempGameObject.transform.localScale = Vector3.one;
-            tempGameObject.transform.position = new Vector3(tempGameObject.transform.position.x, tempGameObject.transform.position.y, gridLayout.transform.position.z);
+            tempGameObject.transform.localPosition = new Vector3(tempGameObject.transform.localPosition.x, tempGameObject.transform.localPosition.y, gridLayout.transform.localPosition.z);
+            tempGameObject.transform.rotation = gridLayout.transform.rotation;
             hotbarButtons.Add(tempGameObject.GetComponent<Button>());
             hotbarButtons[i].name = "HotbarButton" + i;
             P_Inventory.HotbarDictionary.ElementAt(i).Value.spaceUI = hotbarButtons[i];
@@ -188,6 +197,13 @@ public class InventoryUI : MonoBehaviour {
             infoPanel.itemType.text = "";
         }
     }
+    private void DetectDrag(Button currentButton)
+    {
+        if (playerMovement.thisPlayer.GetButton("Attack"))
+        {
+            currentButton.OnPointerEnter(pointerED);
+        }
+    }
     private void UpdateHotbar()
     {
         if (playerMovement.thisPlayer.GetButtonDown("Hotbar1"))
@@ -219,4 +235,14 @@ public class InventoryUI : MonoBehaviour {
             invButtons[i].onClick.RemoveAllListeners();
         }
     }
+    void Hello()
+    {
+
+    }
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(guiRay.origin,guiRay.direction*100);
+    }
+
 }
