@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using BeardedManStudios.Network;
+
+[ExecuteInEditMode]
 public class Grid : NetworkedMonoBehavior {
     public bool displayGridGizmos;
     public LayerMask unwalkableMask;
@@ -16,15 +18,17 @@ public class Grid : NetworkedMonoBehavior {
     [NetSync]
     public bool gridCreated;
     public Vector3 gridStartPos;
-    
+
+    public GameObject farmTile;
+
+
+
     void Awake ()
     {
-        nodeDiameter = nodeRadius * 2;
-        gridSizeX = Mathf.RoundToInt( gridWorldSize.x / nodeDiameter);
-        gridSizeY = Mathf.RoundToInt(gridWorldSize.y / nodeDiameter);
+      
         
-        CreateGrid();
-        gridCreated = true;
+       // CreateGrid();
+       
     }
   
   
@@ -103,9 +107,11 @@ public class Grid : NetworkedMonoBehavior {
 
         return grid[x, y];
     }
-    void CreateGrid()
+    public void CreateGrid()
     {
-
+        nodeDiameter = nodeRadius * 2;
+        gridSizeX = Mathf.RoundToInt(gridWorldSize.x / nodeDiameter);
+        gridSizeY = Mathf.RoundToInt(gridWorldSize.y / nodeDiameter);
         grid = new Node[gridSizeX, gridSizeY];
         Vector3 worldBottomLeft = transform.position - Vector3.right * gridWorldSize.x / 2 - Vector3.forward * gridWorldSize.y / 2;
         for (int x  = 0; x < gridSizeX; x++)
@@ -121,9 +127,15 @@ public class Grid : NetworkedMonoBehavior {
                 worldPoint.z = Mathf.RoundToInt(worldPoint.z);
 
                 //Can raycast to find layer, and set the cost higher
-
                 grid[x, y] = new Node(true, worldPoint, x,y, 0);
 
+                GameObject tileins = Instantiate(farmTile, grid[x, y].worldPos, Quaternion.identity, transform);
+                FarmTile fTile = tileins.GetComponent<FarmTile>();
+                tileins.transform.localScale = Vector3.one * ( nodeRadius * 0.2f );
+                tileins.GetComponent<Renderer>().material = fTile.mats[0];
+                fTile.myNode = grid[x, y];
+             
+                gridCreated = true;
             }
         }
     }
