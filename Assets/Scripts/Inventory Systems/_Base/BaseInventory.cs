@@ -55,11 +55,12 @@ public class BaseInventory: MonoBehaviour
             from s in dictionary.Values
             where s.SpaceIsFree == true
             select s;
-        if (iSpace.First().SpaceIsFree)
+        iSpace.DefaultIfEmpty(null);
+        if (iSpace.FirstOrDefault())
             return iSpace.First();
         else
         {
-            Debug.LogError("No Inventory Space!");
+            Debug.LogWarning("No Inventory Space!");
             return null;
         }
     }

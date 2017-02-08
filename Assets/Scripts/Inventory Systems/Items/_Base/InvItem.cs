@@ -13,9 +13,12 @@ public class InvItem : ScriptableObject
     };
     public IType ThisItemType;
     public SeedProperties seedProps;
-    public void UseEvent()
+    public delegate void ItemDelegate();
+    public event ItemDelegate UseEvent;
+    public void ClearEventSubscribers() { UseEvent = null; }
+    public void UseThisItem()
     {
-
+        UseEvent();
     }
 }
 

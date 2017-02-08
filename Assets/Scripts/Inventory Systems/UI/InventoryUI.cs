@@ -23,6 +23,7 @@ public class InventoryUI : MonoBehaviour {
     private List<Button> hotbarButtons = new List<Button>();
     private InventorySpace tempSpace;
     private InventorySpace currentSelectedSpace;
+    public Color ItemInSpaceColor, EmptySpaceColor, SelectedSpaceColor;
     [Space]
     [Header("Debug")]
     [Space]
@@ -59,7 +60,10 @@ public class InventoryUI : MonoBehaviour {
                 removeItemDebug.gameObject.SetActive(false);
                 checkInvDebug.gameObject.SetActive(false);
             }
+            
             UpdateInfoPanel(currentSelectedSpace);
+            UpdateSpaceColors(P_Inventory.InventoryDictionary);
+            UpdateSpaceColors(P_Inventory.HotbarDictionary);
         }
         else
         {
@@ -67,7 +71,11 @@ public class InventoryUI : MonoBehaviour {
             inventoryHolder.gameObject.SetActive(false);
             addItemDebug.gameObject.SetActive(false);
             removeItemDebug.gameObject.SetActive(false);
+            UpdateHotbar();
+            UpdateSpaceColors(P_Inventory.HotbarDictionary);
         }
+
+
     }
     void ShowUI()
     {
@@ -75,6 +83,7 @@ public class InventoryUI : MonoBehaviour {
         {
             inventoryHolder.gameObject.SetActive(true);
             currentSelectedSpace = P_Inventory.InventoryDictionary[0];
+            P_Inventory.currentSelectedHotbarSpace.spaceUIImage.color = EmptySpaceColor;
             isShowingUI = true;
         }
     }
@@ -83,6 +92,8 @@ public class InventoryUI : MonoBehaviour {
         if(isShowingUI)
         {
             inventoryHolder.gameObject.SetActive(false);
+            currentSelectedSpace = P_Inventory.InventoryDictionary[0];
+            
             isShowingUI = false;
         }   
     }
@@ -102,9 +113,12 @@ public class InventoryUI : MonoBehaviour {
         {
             tempGameObject = Instantiate(inventorySpaceUI_Prefab, gridLayout.transform) as GameObject;
             tempGameObject.transform.localScale = Vector3.one;
+            tempGameObject.transform.localPosition = new Vector3(tempGameObject.transform.localPosition.x, tempGameObject.transform.localPosition.y,0);
+            tempGameObject.transform.localRotation = Quaternion.identity;
             invButtons.Add(tempGameObject.GetComponent<Button>());
             invButtons[i].name = "InvButton" + i;
             P_Inventory.InventoryDictionary.ElementAt(i).Value.spaceUI = invButtons[i];
+            P_Inventory.InventoryDictionary.ElementAt(i).Value.spaceUIImage = invButtons[i].GetComponent<Image>();
         }
         foreach (Button b in invButtons)
         {
@@ -114,13 +128,34 @@ public class InventoryUI : MonoBehaviour {
         {
             tempGameObject = Instantiate(inventorySpaceUI_Prefab, hotbarLayout.transform) as GameObject;
             tempGameObject.transform.localScale = Vector3.one;
+            tempGameObject.transform.position = new Vector3(tempGameObject.transform.position.x, tempGameObject.transform.position.y, gridLayout.transform.position.z);
             hotbarButtons.Add(tempGameObject.GetComponent<Button>());
             hotbarButtons[i].name = "HotbarButton" + i;
             P_Inventory.HotbarDictionary.ElementAt(i).Value.spaceUI = hotbarButtons[i];
+            P_Inventory.HotbarDictionary.ElementAt(i).Value.spaceUIImage = hotbarButtons[i].GetComponent<Image>();
         }
         foreach (Button b in hotbarButtons)
         {
             b.onClick.AddListener(delegate { ChangeSelectedSpace(b,P_Inventory.HotbarDictionary); });
+        }
+
+    }
+    public void UpdateSpaceColors(Dictionary<int,InventorySpace> spacesToEffect)
+    {
+        foreach (InventorySpace iSpace in spacesToEffect.Values)
+        {
+            if (iSpace.spaceUIImage != null)
+            {
+                if (iSpace == P_Inventory.currentSelectedHotbarSpace&&!showingUI)
+                {
+                    iSpace.spaceUIImage.color = SelectedSpaceColor;
+                    //return;
+                }
+                else if (iSpace == currentSelectedSpace)
+                    iSpace.spaceUIImage.color = SelectedSpaceColor;
+                else
+                    iSpace.spaceUIImage.color = EmptySpaceColor;
+            }
         }
     }
     public void UpdateSpaceUI(int key,Dictionary<int,InventorySpace> suppliedDictionary, string itemName,bool remove)
@@ -152,6 +187,19 @@ public class InventoryUI : MonoBehaviour {
             infoPanel.itemName.text = "";
             infoPanel.itemType.text = "";
         }
+    }
+    private void UpdateHotbar()
+    {
+        if (playerMovement.thisPlayer.GetButtonDown("Hotbar1"))
+            P_Inventory.currentSelectedHotbarSpace = P_Inventory.HotbarDictionary[0];
+        if (playerMovement.thisPlayer.GetButtonDown("Hotbar2"))
+            P_Inventory.currentSelectedHotbarSpace = P_Inventory.HotbarDictionary[1];
+        if (playerMovement.thisPlayer.GetButtonDown("Hotbar3"))
+            P_Inventory.currentSelectedHotbarSpace = P_Inventory.HotbarDictionary[2];
+        if (playerMovement.thisPlayer.GetButtonDown("Hotbar4"))
+            P_Inventory.currentSelectedHotbarSpace = P_Inventory.HotbarDictionary[3];
+        if (playerMovement.thisPlayer.GetButtonDown("Hotbar5"))
+            P_Inventory.currentSelectedHotbarSpace = P_Inventory.HotbarDictionary[4];
     }
     public void ChangeSelectedSpace(Button pressed,Dictionary<int, InventorySpace> suppliedDictionary)
     {

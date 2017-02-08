@@ -8,8 +8,10 @@ public class InventorySpace : ScriptableObject
     public bool SpaceIsFree=true;
     public InvItem ContainedItem;
     public Button spaceUI;
+    public Image spaceUIImage;
     public int position;
     public bool IsHotBarSpace;
+   
     public void AddedItem(InvItem item)
     {
         ContainedItem = item;
