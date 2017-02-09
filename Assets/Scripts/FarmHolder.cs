@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[System.Serializable]
 public class FarmHolder : MonoBehaviour {
 
-    [SerializeField]
-    public List<GameObject> farms = new List<GameObject>();
 
+    public List<GameObject> farms;
+
+    public LayerMask farmMask;
     void Update()
     {
         

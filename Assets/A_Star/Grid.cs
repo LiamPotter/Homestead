@@ -104,7 +104,7 @@ public class Grid : NetworkedMonoBehavior {
 
         int x = Mathf.RoundToInt( (gridSizeX - 1) * percentX);
         int y = Mathf.RoundToInt((gridSizeY - 1) * percentY);
-
+       
         return grid[x, y];
     }
     public void CreateGrid()
@@ -134,8 +134,9 @@ public class Grid : NetworkedMonoBehavior {
                 tileins.transform.localScale = Vector3.one * ( nodeRadius * 0.2f );
                 tileins.GetComponent<Renderer>().material = fTile.mats[0];
                 fTile.myNode = grid[x, y];
-             
+                tileins.name = "Tile " + x + y;
                 gridCreated = true;
+                
             }
         }
     }
