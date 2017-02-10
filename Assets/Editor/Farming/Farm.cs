@@ -20,13 +20,22 @@ public class Farm : Editor {
     string[] farmNames;
     bool addGrid;
     bool editing;
-
+    bool clcikToPlace;
     int rows = 0;
     int columns = 0;
     float nodeRad = 0;
     float radius = 0;
 
+    [SerializeField]
+    SO so;
+
+    Vector3 fPos;
+    SerializedObject _SO;
     Grid gridActive;
+
+    [SerializeField]
+    private List<GameObject> farm = new List<GameObject>();
+
     private List<GameObject> tilesChanging = new List<GameObject>();
     GameObject recentlyCreated = null;
     Vector2 mousePos;
@@ -34,41 +43,66 @@ public class Farm : Editor {
     void OnEnable()
     {
         fHolder = FindObjectOfType<FarmHolder>();
-     
+        so = (SO)AssetDatabase.LoadAssetAtPath("Assets/Resources/MySO.asset", typeof(SO));
+        _SO = new SerializedObject(so);
+
+        EditorUtility.SetDirty(so);
+        //farm.AddRange(so.theList);    
+
+    }
+    public void OnDisable()
+    {
+       
+        AssetDatabase.SaveAssets();
+        _SO.ApplyModifiedProperties();
+        
+        AssetDatabase.Refresh();
     }
     void OnSceneGUI()
     {
         if(currentActive != null)
              gridActive = currentActive.GetComponent<Grid>();
 
-        if (Event.current.type == EventType.MouseDown && move)
-        {
-
-            Ray ray = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition);
-            RaycastHit hit;
-      
-            if (Physics.Raycast(ray, out hit) && move)
-            {
-                currentActive.transform.position = hit.point;
-                currentActive.GetComponent<Grid>().gridStartPos = hit.point;
-                move = false;
-            }
-        Event.current.Use();
-
-        }
         if (Event.current.type == EventType.MouseDown)
         {
-            foreach (GameObject tile in tilesChanging)
+            if (clcikToPlace)
             {
-                tilesChanging.Remove(tile);
+                Ray ray = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition);
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit) )
+                {
+                    CreateGrid(rows, columns, nodeRad, hit.point);
+                    clcikToPlace = false;
+                }
+
+            
             }
+
+            else if(move)
+            {
+                Ray ray = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition);
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit) && move)
+                {
+                    currentActive.transform.position = hit.point;
+                    currentActive.GetComponent<Grid>().gridStartPos = hit.point;
+                    move = false;
+                }
+            }
+           
+          Event.current.Use();
+
         }
+
+   
         if (Event.current.type == EventType.MouseDrag && editing)
         {
             Ray ray = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition);
             RaycastHit[] hitinfo;
             hitinfo = Physics.SphereCastAll(ray, radius * 0.01f, 150, fHolder.farmMask);
-            Handles.DrawLine(Event.current.mousePosition, hitinfo[0].point);
+
 
             //Debug.Log(hitinfo.Length);
             foreach (RaycastHit hit in hitinfo)
@@ -84,11 +118,21 @@ public class Farm : Editor {
 
         }
 
-        Handles.BeginGUI();
-        Handles.color = Color.blue;
-        Handles.DrawWireCube(Event.current.mousePosition, Vector3.one * radius);
-        Handles.EndGUI();
-        Selection.activeGameObject = fHolder.gameObject;
+        if (Event.current.type == EventType.MouseUp)
+        {
+
+            tilesChanging.Clear();
+        }
+
+        if(editing)
+        {
+            Handles.BeginGUI();
+            Handles.color = Color.blue;
+            Handles.DrawWireCube(Event.current.mousePosition, Vector3.one * radius);
+            Handles.EndGUI();
+        }
+    
+     
     }
     void ChangeTiles(GameObject tile)
     {
@@ -122,24 +166,29 @@ public class Farm : Editor {
         }
     }
 
-    void CreateGrid(int rows, int columns, float nodeRad)
+    void CreateGrid(int rows, int columns, float nodeRad, Vector3 pos)
     {
         GameObject newFarm = AssetDatabase.LoadAssetAtPath("Assets/Perfabs/Farm/Farm.prefab", typeof(GameObject)) as GameObject;
-        GameObject farmIns = Instantiate(newFarm, FindObjectOfType<FarmHolder>().transform) as GameObject;
+        GameObject farmIns = Instantiate(newFarm, pos, Quaternion.identity, FindObjectOfType<FarmHolder>().transform) as GameObject;
         farmIns.GetComponent<Grid>().gridWorldSize = new Vector2(rows, columns);
         farmIns.GetComponent<Grid>().nodeRadius = nodeRad;
-        farmIns.name = "Farming Plot " + FindObjectOfType<FarmHolder>().farms.Count;
+        farmIns.name = "Farming Plot " + farm.Count;
      
         recentlyCreated = farmIns;
         recentlyCreated.GetComponent<Grid>().CreateGrid();
-        FindObjectOfType<FarmHolder>().farms.Add(farmIns);
 
+        farm.Add(farmIns);
+        //so.theList.Add(farmIns);
+        so.num.Add( Random.Range(0, 5));
+        EditorUtility.SetDirty(so);
     }
-
+    
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
 
+        _SO.Update();
+    
         if (GUILayout.Button("Add Grid"))
         {
             addGrid = true;
@@ -162,9 +211,16 @@ public class Farm : Editor {
             nodeRad = EditorGUILayout.FloatField("Node Radius", nodeRad);
             GUILayout.EndHorizontal();
 
+            GUILayout.Label("Add Vecter3 Position or Click Create and Click Anywhere In Scene View");
+            fPos = EditorGUILayout.Vector3Field("Position ", fPos);
+
             if (GUILayout.Button("Create"))
             {
-                CreateGrid(rows, columns, nodeRad);
+                if(fPos == Vector3.zero)
+                    clcikToPlace = true;
+                else
+                    CreateGrid(rows, columns, nodeRad, fPos);
+
                 addGrid = false;
             }
         }
@@ -173,34 +229,35 @@ public class Farm : Editor {
 
         GUIStyle style = new GUIStyle();
 
-
-        for (int i = 0; i < fHolder.farms.Count; i++)
+        
+        for (int i = 0; i < farm.Count; i++)
         {
-            if (editing && i != fHolder.farms.IndexOf(currentActive))
+            if (editing && i != farm.IndexOf(currentActive))
             {
                 continue;
             }
 
             GUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField(fHolder.farms[i].name);
+            EditorGUILayout.LabelField(farm[i].name);
                 
             if (GUILayout.Button("Edit") )
             {
 
-                currentActive = fHolder.farms[i];
+                currentActive = farm[i];
                 ChangeEdit();
                 
             }
             if (GUILayout.Button("Remove"))
             {
-                DestroyImmediate(fHolder.farms[fHolder.farms.Count - 1]);
-                fHolder.farms.RemoveAt((fHolder.farms.Count - 1));
-
+                DestroyImmediate(farm[farm.Count - 1]);
+           
+                farm.RemoveAt((farm.Count - 1));
+                
                 editing = false;
             }
             if (GUILayout.Button("move"))
             {
-                currentActive = fHolder.farms[i];
+                currentActive = farm[i];
                 editing = false;
                 move = true;
             }
@@ -236,12 +293,32 @@ public class Farm : Editor {
             g.gridWorldSize = new Vector2(rows, columns);
             g.nodeRadius = nodeRad;
 
-             radius = EditorGUILayout.FloatField("Brush Size", radius);
+            radius = EditorGUILayout.FloatField("Brush Size", radius);
 
            
         }
+        _SO.ApplyModifiedProperties();
+        EditorUtility.SetDirty(so);
+        ListIterator("theList", _SO, style, "SOME TITLE");
+    }
+
+    public void ListIterator(string propertyPath, SerializedObject serializedObject, GUIStyle style, string title)
+    {
+        SerializedProperty listProperty = serializedObject.FindProperty(propertyPath);
+       // visible = EditorGUILayout.Foldout(visible, title, style);
+      
+            for (int i = 0; i < listProperty.arraySize; i++)
+            {
+                EditorGUILayout.Space();
+                SerializedProperty elementProperty = listProperty.GetArrayElementAtIndex(i);
+
+                farm[i] = GameObject.Find(elementProperty.objectReferenceValue.name);
 
 
+         
+                
+            }
+        
     }
 
 }
