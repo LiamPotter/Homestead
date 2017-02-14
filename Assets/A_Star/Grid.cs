@@ -2,36 +2,46 @@
 using System.Collections;
 using System.Collections.Generic;
 using BeardedManStudios.Network;
-
 [ExecuteInEditMode]
+[System.Serializable]
 public class Grid : NetworkedMonoBehavior {
     public bool displayGridGizmos;
     public LayerMask unwalkableMask;
     public Vector2 gridWorldSize;
     public  float nodeRadius;
-   
-    public Node[,] grid;
+
+    [SerializeField]
+    public Node[] grid;
 
     float nodeDiameter;
+
+    [SerializeField]
     int gridSizeX, gridSizeY;
 
     [NetSync]
     public bool gridCreated;
+
+    [SerializeField]
     public Vector3 gridStartPos;
 
     public GameObject farmTile;
 
 
 
-    void Awake ()
+    protected override void NetworkStart()
     {
-      
-        
-       // CreateGrid();
+        base.NetworkStart();
+        Debug.Log(NetworkedId);
+
+    }
+ 
+   
+  
+  void Awake()
+    {
+        gridStartPos = transform.position;
        
     }
-  
-  
 
     public float NodeDiameter
     {
@@ -79,7 +89,7 @@ public class Grid : NetworkedMonoBehavior {
 
                 if (checkX >= 0 && checkX < gridSizeX && checkY >=0 && checkY < gridSizeY)
                 {
-                    neighbours.Add(grid[checkX, checkY]);
+                  //  neighbours.Add(grid[checkX, checkY]);
                 }
             }
         }
@@ -102,18 +112,22 @@ public class Grid : NetworkedMonoBehavior {
         percentX = Mathf.Clamp01(percentX);
         percentY = Mathf.Clamp01(percentY);
 
-        int x = Mathf.RoundToInt( (gridSizeX - 1) * percentX);
-        int y = Mathf.RoundToInt((gridSizeY - 1) * percentY);
+        int x = Mathf.RoundToInt( (gridSizeX ) * percentX);
+        int y = Mathf.RoundToInt((gridSizeY ) * percentY);
        
-        return grid[x, y];
+        return grid[y * gridSizeX + x];
     }
+    
+    [SerializeField]
     public void CreateGrid()
     {
         nodeDiameter = nodeRadius * 2;
         gridSizeX = Mathf.RoundToInt(gridWorldSize.x / nodeDiameter);
         gridSizeY = Mathf.RoundToInt(gridWorldSize.y / nodeDiameter);
-        grid = new Node[gridSizeX, gridSizeY];
+        
+        grid = new Node[gridSizeX * gridSizeY];
         Vector3 worldBottomLeft = transform.position - Vector3.right * gridWorldSize.x / 2 - Vector3.forward * gridWorldSize.y / 2;
+        int i = 0;
         for (int x  = 0; x < gridSizeX; x++)
         {
             for (int y = 0; y < gridSizeY; y ++)
@@ -127,16 +141,19 @@ public class Grid : NetworkedMonoBehavior {
                 worldPoint.z = Mathf.RoundToInt(worldPoint.z);
 
                 //Can raycast to find layer, and set the cost higher
-                grid[x, y] = new Node(true, worldPoint, x,y, 0);
 
-                GameObject tileins = Instantiate(farmTile, grid[x, y].worldPos, Quaternion.identity, transform);
+                grid[y * gridSizeX + x] = new Node(true, worldPoint, x,y, 0);
+                
+                GameObject tileins = Instantiate(farmTile, grid[ y * gridSizeX + x].worldPos, Quaternion.identity, transform);
                 FarmTile fTile = tileins.GetComponent<FarmTile>();
                 tileins.transform.localScale = Vector3.one * ( nodeRadius * 0.2f );
                 tileins.GetComponent<Renderer>().material = fTile.mats[0];
-                fTile.myNode = grid[x, y];
-                tileins.name = "Tile " + x + y;
+                fTile.myNode = grid[y * gridSizeX + x];
+                fTile.myNode.myTile = fTile;
+                fTile.matName = "Grass";
+                tileins.name = "Tile " + i;
                 gridCreated = true;
-                
+                i++;
             }
         }
     }

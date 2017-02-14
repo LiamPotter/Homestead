@@ -14,7 +14,7 @@ public class FarmHolder : MonoBehaviour {
 
     void Start()
     {
-       // farms.AddRange(so.theList);
+       farms.AddRange(GameObject.FindGameObjectsWithTag("Farms"));
     }
    
 

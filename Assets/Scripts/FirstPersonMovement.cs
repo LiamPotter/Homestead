@@ -58,6 +58,8 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
 
     [NetSync]
     public int x = 0;
+
+    Test test;
     protected void Awake()
     {
         thisPlayer = ReInput.players.GetPlayer((int)OwnerId + 1);
@@ -65,6 +67,7 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
         initialCameraRotation = FirstPersonCamera.rotation.eulerAngles;
         thisAnimator = CharacterModel.GetComponent<Animator>();
         currentClip = 0;
+        test = FindObjectOfType<Test>();
     }
 
     private void RaycastFromCenterScreen(bool plantingSeed)
@@ -80,8 +83,9 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
         if (Physics.Raycast(ray, out farmHit, 20, farmMask))
         {
             //Do stuff
-           FindObjectOfType<Test>().PlantShit(farmHit.point);
-           FindObjectOfType<Test>().ChangeShit(farmHit.point);
+
+           test.PlantShit(farmHit.point, farmHit.transform.GetComponentInParent<Grid>().NetworkedId);
+           test.ChangeShit(farmHit.point, farmHit.transform.GetComponentInParent<Grid>().NetworkedId);
             
         }
 
@@ -160,15 +164,10 @@ public class FirstPersonMovement : NetworkedMonoBehavior {
             }
         }
         else HideInteractUI();
+
         if (Input.GetMouseButton(0))
         {
-            if (Networking.PrimarySocket.IsServer && FindObjectOfType<Grid>() == null)
-            {
-                FindObjectOfType<Test>().InstantiateFarm(farmHit.point);
-             
-            }
-            else 
-               RaycastFromCenterScreen(false);
+            RaycastFromCenterScreen(false);
         }
     }
    

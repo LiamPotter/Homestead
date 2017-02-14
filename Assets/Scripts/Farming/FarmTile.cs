@@ -6,12 +6,13 @@ public class FarmTile : NetworkedMonoBehavior {
 
    
     public Node myNode;
-    
+
     [NetSync]
-    public int matIndex = 0;
+    public string matName;
 
     [NetSync]
     public Vector3 scale;
+    public Dictionary<int, Material> materials = new Dictionary<int, Material>();
 
     public Material[] mats;
 
@@ -26,15 +27,21 @@ public class FarmTile : NetworkedMonoBehavior {
     public string[] seeds;
 
     public GameObject seedPlace;
+    public SO _scriptableObject;
 
     private GameObject myCurrentSeed;
     // Use this for initialization
     void Awake () {
         //        myNode = null;
-        
         mR = GetComponent<MeshRenderer>();
 	}
 
+    protected override void NetworkStart()
+    {
+        base.NetworkStart();
+
+    }
+   
     [BRPC]
     public void SeedPlanted(int seedIndex)
     {
@@ -65,23 +72,28 @@ public class FarmTile : NetworkedMonoBehavior {
     protected override void UnityUpdate() {
         base.UnityUpdate();
 
+        
+
         if (scale != Vector3.zero)
             transform.localScale = scale;
-        if (mR.material != mats[matIndex])
-            mR.material = mats[matIndex];
+
+        if (mR.sharedMaterial.name != matName && matName != null)
+            mR.material = _scriptableObject.materials[matName];
+
+
         if (transform.position != myNode.worldPos)
-            transform.position = myNode.worldPos;
+           //    transform.position = myNode.worldPos;
 
         timer -= Time.deltaTime;
 
         if (timer <= 0)
         {
-            ChangeTile(matIndex - 1);
+            ChangeTile(matName);
             
             timer = 2;
         }
 
-        if (matIndex == 2)
+        if (matName == "TilledDirt")
             tilled = true;
         else
             tilled = false;
@@ -90,15 +102,18 @@ public class FarmTile : NetworkedMonoBehavior {
     public void TillTile()
     {
         Debug.Log("Tilling Tile");
-        RPC("ChangeTile",NetworkReceivers.AllBuffered, 2);
+        
+    
     }
 
     [BRPC]
-    public void ChangeTile(int index)
+    public void ChangeTile(string index)
     {
        
-        matIndex = index;
-        matIndex = Mathf.Clamp(matIndex, 0, 2);
+        matName = index;
+        mR.material = _scriptableObject.materials[matName];
+
+
     }
     public void SetMyNode(Node node)
     {

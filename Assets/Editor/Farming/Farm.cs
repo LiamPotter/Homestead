@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System.Linq;
-
+using UnityEditor.SceneManagement;
 enum PaintMode
 {
     Unwalkable,
@@ -26,11 +26,10 @@ public class Farm : Editor {
     float nodeRad = 0;
     float radius = 0;
 
-    [SerializeField]
-    SO so;
+    SO scriptableObject;
+
 
     Vector3 fPos;
-    SerializedObject _SO;
     Grid gridActive;
 
     [SerializeField]
@@ -43,19 +42,19 @@ public class Farm : Editor {
     void OnEnable()
     {
         fHolder = FindObjectOfType<FarmHolder>();
-        so = (SO)AssetDatabase.LoadAssetAtPath("Assets/Resources/MySO.asset", typeof(SO));
-        _SO = new SerializedObject(so);
-
-        EditorUtility.SetDirty(so);
+        farm.Clear();
+        if (GameObject.FindGameObjectsWithTag("Farms") != null)
+        {
+            farm.AddRange(GameObject.FindGameObjectsWithTag("Farms"));
+        }
         //farm.AddRange(so.theList);    
 
+        scriptableObject = (SO)AssetDatabase.LoadAssetAtPath("Assets/Resources/MySo.asset", typeof(SO));
     }
     public void OnDisable()
     {
        
         AssetDatabase.SaveAssets();
-        _SO.ApplyModifiedProperties();
-        
         AssetDatabase.Refresh();
     }
     void OnSceneGUI()
@@ -101,17 +100,18 @@ public class Farm : Editor {
         {
             Ray ray = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition);
             RaycastHit[] hitinfo;
-            hitinfo = Physics.SphereCastAll(ray, radius * 0.01f, 150, fHolder.farmMask);
+            hitinfo = Physics.SphereCastAll(ray, radius * 0.1f, Mathf.Infinity, fHolder.farmMask);
 
-
-            //Debug.Log(hitinfo.Length);
             foreach (RaycastHit hit in hitinfo)
             {
                 if (tilesChanging.Contains(hit.transform.gameObject))
                     continue;
 
-                 tilesChanging.Add(hit.transform.gameObject);
-                 ChangeTiles(hit.transform.gameObject);
+                if(hit.transform.GetComponentInParent<Grid>() == gridActive)
+                {
+                    ChangeTiles(hit.transform.gameObject);
+                }
+          
 
             }
             Event.current.Use();
@@ -139,18 +139,32 @@ public class Farm : Editor {
         switch (pMode)
         {
             case PaintMode.Unwalkable:
-                tile.GetComponent<MeshRenderer>().material = Resources.Load("UnWalkable") as Material;
+                SetIndex(tile, "Unwalkable");
                 break;
             case PaintMode.Grass:
-                tile.GetComponent<MeshRenderer>().material = Resources.Load("Grass") as Material;
+                
+                SetIndex(tile, "Grass");
                 break;
             case PaintMode.Dirt:
-                tile.GetComponent<MeshRenderer>().material = Resources.Load("Dirt") as Material;
+                SetIndex(tile, "Dirt");
                 break;
             default:
                 break;
         }
 
+    }
+
+    void SetIndex(GameObject tile, string type)
+    {
+        foreach (KeyValuePair<string, Material> keyValue in scriptableObject.materials)
+        {
+            if (keyValue.Value.name == type)
+            {
+                tile.GetComponent<MeshRenderer>().material = keyValue.Value;
+                tile.GetComponent<FarmTile>().matName = keyValue.Key;
+            }
+            
+        }
     }
     void ChangeEdit()
     {
@@ -178,16 +192,15 @@ public class Farm : Editor {
         recentlyCreated.GetComponent<Grid>().CreateGrid();
 
         farm.Add(farmIns);
+        EditorSceneManager.MarkAllScenesDirty();
+
         //so.theList.Add(farmIns);
-        so.num.Add( Random.Range(0, 5));
-        EditorUtility.SetDirty(so);
     }
-    
+
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
 
-        _SO.Update();
     
         if (GUILayout.Button("Add Grid"))
         {
@@ -249,10 +262,10 @@ public class Farm : Editor {
             }
             if (GUILayout.Button("Remove"))
             {
-                DestroyImmediate(farm[farm.Count - 1]);
+               // DestroyImmediate(farm[i]);
            
-                farm.RemoveAt((farm.Count - 1));
-                
+                farm.RemoveAt(i);
+                EditorSceneManager.MarkAllScenesDirty();
                 editing = false;
             }
             if (GUILayout.Button("move"))
@@ -294,12 +307,9 @@ public class Farm : Editor {
             g.nodeRadius = nodeRad;
 
             radius = EditorGUILayout.FloatField("Brush Size", radius);
+            EditorSceneManager.MarkAllScenesDirty();
 
-           
         }
-        _SO.ApplyModifiedProperties();
-        EditorUtility.SetDirty(so);
-        ListIterator("theList", _SO, style, "SOME TITLE");
     }
 
     public void ListIterator(string propertyPath, SerializedObject serializedObject, GUIStyle style, string title)

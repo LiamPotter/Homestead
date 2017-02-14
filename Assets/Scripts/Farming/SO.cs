@@ -3,22 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 [System.Serializable]
 [CreateAssetMenu]
-public class SO : ScriptableObject {
-    [SerializeField]
-    public GameObject farm;
-
-    public List<int> num = new List<int>();
-}
-
-[System.Serializable]
-public class AList
+public class SO : ScriptableObject
 {
-    public GameObject farm;
+    [SerializeField]
+    public Dictionary<string, Material> materials = new Dictionary<string, Material>();
 
-    public AList(GameObject g)
+    public Material[] mats;
+
+    void OnEnable()
     {
-        farm = g;
-    }
+        for (int i = 0; i < mats.Length; i++)
+        {
+            if (!materials.ContainsValue(mats[i]))
+                materials.Add(mats[i].name, mats[i]);
+            
+        }
 
+    }
 }
+
+
 
